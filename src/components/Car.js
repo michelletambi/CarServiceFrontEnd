@@ -1,9 +1,12 @@
-import React from "react";
-import {useState, useEffect} from "react";
-import axios from "axios";
+const Car = ({car}) => {
 
-const Car = () => {
+    const {id, model, manufacturer} = car
 
+    return (
+        <>
+            <h3>Manufacturer: {manufacturer}</h3>
+        </>
+    )
 }
 
 export default Car;
