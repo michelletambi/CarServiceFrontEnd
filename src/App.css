@@ -1,38 +1,76 @@
-.App {
+
+*{
+  box-sizing: border-box;
+  list-style: none;
+} 
+
+#title{
+  background-color: blanchedalmond;
+  color: lightslategrey;
+  height: 200px;
   text-align: center;
+  padding-top: 2cm;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#image{
+  height: 540px;
+  width: 960px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#trustPilot{
+  height: 100px;
+  width: 225px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navBar{
+  color: blue;
 }
 
-.App-link {
-  color: #61dafb;
+.buttonDesign{
+  color: lightslategrey;
+  background-color: blanchedalmond;
+  width: 200px;
+  flex-flow: row wrap;
+  border: 2px solid rgb(243, 217, 182);
+  border-radius: 3px;
+  border-width: 3px;
+  border-style: solid;
+  font-weight: bold;
+  font-size: medium;
+  padding: 10px 0 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.basketAndLogIn{
+  color: lightslategrey;
+  background-color: blanchedalmond;
+  width: 200px;
+  flex-flow: row wrap;
+  border: 2px solid rgb(243, 217, 182);
+  border-radius: 3px;
+  border-width: 3px;
+  border-style: solid;
+  text-align: center;
+  align-items: flex-start;
+  font-weight: bold;
+  font-size: medium;
+  padding: 10px 10px 10px 10px;
+  border-image: space;
 }
+
+.footer{
+  position: absolute;
+  width: 100%;
+
+}
+.copyrights{
+text-align: center;
+}
+
+.fa-solid fa-inbox{
+  height: 120%;
+}
+.fa-inbox:hoover{
+  transform: scale(5.5); 
+
+}
+
