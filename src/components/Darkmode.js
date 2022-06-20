@@ -1,6 +1,6 @@
 import './DarkMode.css';
 
-function DarkMode(){
+function DarkMode() {
 
     // const button = document.querySelector("#button");
     // const box = document.querySelector("#box");
