@@ -1,10 +1,12 @@
 const Car = ({car}) => {
 
-    const {id, model, manufacturer} = car
+    const {manufacturer, model, price} = car
 
     return (
         <>
             <h3>Manufacturer: {manufacturer}</h3>
+            <p>Model: {model}</p>
+            <p>Price: {price}</p>
         </>
     )
 }
