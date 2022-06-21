@@ -1,7 +1,6 @@
 import HomeSearch from "../components/HomeSearch";
-import CarList from "../components/CarList";
 import DarkMode from "../components/Darkmode";
-import CarFilter from "../components/CarFilter";
+import CarList from "../components/CarList";
 // this handles all things on the homepage
 
 
@@ -21,8 +20,10 @@ const HomeContainer = () => {
                 100% profit rate 
             </p> 
             <a  href = "link to review site"> <img src = "http://animalultrasoundassociation.org/wp-content/uploads/2019/08/trustpilot.jpg" alt = "Trust-pilot  stars image" id="trustPilot"/></a>
-            <HomeSearch/>
-            <CarFilter/>
+            {/* <HomeSearch/> */}
+            <CarList/>
+            
+           
 
             <footer className="footer"> 
                 <hr/>
