@@ -34,7 +34,6 @@ const CarFilter = () => {
                 const manufacturer = res.data;
                 setManufacturer(manufacturer);})
                 .catch((err) => console.log("We do not stock this product"));
-    
             }, [])}
 
     const button = document.querySelector("#button");
