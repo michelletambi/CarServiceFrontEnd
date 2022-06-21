@@ -1,28 +1,17 @@
-import HomeSearch from "../components/HomeSearch";
-import CarList from "../components/CarList";
 import DarkMode from "../components/Darkmode";
+import HomeSearch from "../components/HomeSearch";
 import CarFilter from "../components/CarFilter";
 import NavBar from "../components/NavBar";
-// this handles all things on the homepage
 
-
-const HomeContainer = () => {
+const LogInContainer = () => {
 
     return (
         <>
             <NavBar />
             <h1 id="title">
-                Carz4FREEEEEEEE
+                Welcome to Carz4FREEEEEEEE
             </h1>
             <DarkMode /> 
-            <img src="https://cdn.onebauer.media/one/media/5d31/bc4a/6933/03bf/2fd4/6ce8/fast-furious.jpg?format=jpg&quality=80&width=960&height=540&ratio=16-9&resize=aspectfill" alt = "i live my life a quarter mile at a time..." id="image"/>
-            <p> 
-                we buy any carz4free and sell for free
-            </p>
-            <p> 
-                100% profit rate 
-            </p> 
-            <a  href = "link to review site"> <img src = "http://animalultrasoundassociation.org/wp-content/uploads/2019/08/trustpilot.jpg" alt = "Trust-pilot  stars image" id="trustPilot"/></a>
             <HomeSearch/>
             <CarFilter/>
 
@@ -53,4 +42,4 @@ const HomeContainer = () => {
         </>
     );
 }
-export default HomeContainer;
+export default LogInContainer;
