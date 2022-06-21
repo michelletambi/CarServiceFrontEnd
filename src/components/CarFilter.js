@@ -31,7 +31,6 @@ const CarFilter = () => {
         }, [])
     }
 
-
     const SearchByManufacturer = () => {
         axios.get(`http://127.0.0.1:8080/filter_products/${manufacturer}`)
         .then(res => {
