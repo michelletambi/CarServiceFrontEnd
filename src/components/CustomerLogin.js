@@ -15,13 +15,7 @@ const CustomerLogin = () => {
     console.log(customers);
     // console.log(filteredCustomers);
 
-    const filter = (customers, email) => {
-        return customers.email == email
-    }
 
-    let filteredCustomers = customers.filter(customers, email);
-    console.log(filteredCustomers);
-    // console.log(customers.filter(c => c.name.includes("Ki")));
     
     
     return(
