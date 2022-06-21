@@ -44,14 +44,6 @@ const CarFilter = () => {
         }, [])
     }
 
-    const button = document.querySelector("#button");
-
-    const handleButtonClick = () => {
-        SearchByManufacturer;
-    }
-
-    button.addEventListener("click", handleButtonClick);
-
 
     return (
     <section>
