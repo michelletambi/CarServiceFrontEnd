@@ -18,35 +18,44 @@ const CarFilter = () => {
     // List<Product> priceRange = productRepository.findByPriceGreaterThanEqualAndPriceLessThanEqual(minPrice, maxPrice);
     // List<Product> result = inStock.stream().filter(priceRange::contains).collect(Collectors.toList());
 
-    const searchByModel = useEffect( () => {
+    const SearchByModel = () => {
         axios.get(`http://127.0.0.1:8080/filter_products/${model}`)
         .then(res => {
             // .filter()
             const model = res.data;
             setModel(model);})
             .catch((err) => console.log("We do not stock this product"));
-        }, []);
+            
+        useEffect(() => {
+        SearchByModel();
+        }, [])
+    }
 
-        function SearchByManufacturer() { useEffect( () => {
-            axios.get(`http://127.0.0.1:8080/filter_products/${manufacturer}`)
-            .then(res => {
-                // .filter()
-                const manufacturer = res.data;
-                setManufacturer(manufacturer);})
-                .catch((err) => console.log("We do not stock this product"));
+
+    const SearchByManufacturer = () => {
+        axios.get(`http://127.0.0.1:8080/filter_products/${manufacturer}`)
+        .then(res => {
+             // .filter()
+            const manufacturer = res.data;
+            setManufacturer(manufacturer);})
+            .catch((err) => console.log("We do not stock this product"));
     
-            }, [])}
+        useEffect(() => {
+            SearchByManufacturer();
+        }, [])
+    }
 
     const button = document.querySelector("#button");
 
-    const handleButtonClick = (SearchByManufacturer) => {
-        button.addEventListener("click", handleButtonClick);
+    const handleButtonClick = () => {
+        SearchByManufacturer;
     }
 
-    
+    button.addEventListener("click", handleButtonClick);
 
 
     return (
+    <section>
         <form>
             <label htmlFor = "Manufacturer">Manufacturer</label>
             <input type = "text" value = {manufacturer} onChange = {(event) => setManufacturer(event.target.value)}/>
@@ -54,9 +63,10 @@ const CarFilter = () => {
             <label htmlFor = "Model">Model</label>
             <input type = "text" value = {model} onChange = {(event) => setModel(event.target.value)}/>
             <button>Submit</button>
-
-
         </form>
+        
+        <div></div>
+    </section>
     );
 }
 
