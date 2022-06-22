@@ -1,8 +1,14 @@
 import HomeSearch from "../components/HomeSearch";
+<<<<<<< HEAD
 import CarList from "../components/CarList";
 import CarFilter from "../components/CarFilter";
+=======
+import DarkMode from "../components/Darkmode";
+import CarList from "../components/CarList";
+>>>>>>> 4419feb0e8aac91924d7399524d72abbcc6a0824
 import NavBar from "../components/NavBar";
 // this handles all things on the homepage
+
 
 
 const HomeContainer = () => {
@@ -27,8 +33,10 @@ const HomeContainer = () => {
             <h4 id="headingCenter"> only 90% breakdown rate after 3 days</h4>
             <h5 id="headingRight">if you ask for a refund we'll run you over</h5>
             <a  href = "link to review site"> <img src = "http://animalultrasoundassociation.org/wp-content/uploads/2019/08/trustpilot.jpg" alt = "Trust-pilot  stars image" id="trustPilot"/></a>
-            <HomeSearch/>
-            <CarFilter/>
+            {/* <HomeSearch/> */}
+            <CarList/>
+            
+           
 
             <footer className="footer"> 
                 <hr/>
