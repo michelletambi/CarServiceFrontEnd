@@ -2,6 +2,7 @@ import axios from 'axios';
 import {useEffect, useState} from 'react';
 
 
+
 const CustomerLogin = () => {
     
     const [email, setEmail] = useState("");
@@ -29,7 +30,7 @@ const CustomerLogin = () => {
             setId(event.target.value)}/>
             <label htmlFor = "password">Password</label>
             {/* type is text for now just to check things work, later will change it to type = "password" */}
-            <input type = "text"
+            <input type = "text" 
             onChange = { event =>
             setPassword(event.target.value)}/>
             {error && <p>{error}</p>}
