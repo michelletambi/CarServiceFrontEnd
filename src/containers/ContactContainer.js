@@ -1,7 +1,7 @@
 import NavBar from "../components/NavBar";
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Footer from "../components/Footer.js";
+import Footer from "../components/Footer";
 
 
 const ContactContainer = () => {
@@ -27,8 +27,7 @@ const ContactContainer = () => {
                 </form>
             </div>
 
-            <Footer/>
-            
+           <Footer/>
         </>
     );
 }

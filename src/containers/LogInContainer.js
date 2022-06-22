@@ -13,8 +13,8 @@ const LogInContainer = () => {
         <header id="header">
             <NavBar/>
         </header>
-        <body id="body">
-            {/* <form> */}
+        <body id="logInBody">
+            <form>
             <div id="container">
                 {/* <h1 id="heading">Log in</h1>
 
@@ -30,8 +30,7 @@ const LogInContainer = () => {
                 </Link> */}
                 <CustomerLogin/>
             </div>
-            {/* </form> */}
-
+            </form>
         </body>
         <Footer />
         </>

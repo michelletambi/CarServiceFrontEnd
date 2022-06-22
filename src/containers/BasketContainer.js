@@ -25,7 +25,7 @@ const BasketContainer = () => {
                     <p>Total: <span class="price"><b>£</b></span></p>
                 </div>
             </div>
-                <Footer/>
+            <Footer />
         </>
     );
 }

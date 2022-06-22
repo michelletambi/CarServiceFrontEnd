@@ -1,5 +1,4 @@
 import './App.css';
-import "./components/DarkMode.css";
 import HomeContainer from './containers/HomeContainer';
 import {BrowserRouter as Router,Route, Routes,Switch,Link, BrowserRouter} from "react-router-dom";
 import BasketContainer from "./containers/BasketContainer";
@@ -28,9 +27,9 @@ function App() {
   return (
     <ThemeContext.Provider value={ {theme, themeToggler}}>
         <div className="App" id={theme}>
-        <div className='switch'>
+        <div className='switch'>Theme
           <ReactSwitch onChange={themeToggler} checked={theme === "dark"}/>
-        </div>
+          {theme}</div>
         <BrowserRouter>
             <Routes>
               <Route path="/" exact element={<HomeContainer />} />
