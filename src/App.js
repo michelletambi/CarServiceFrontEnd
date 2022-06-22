@@ -38,6 +38,7 @@ function App() {
               <Route path="/" exact element={<HomeContainer />} />
               <Route path="/Products" element={<ProductContainer />}/>
               <Route path="/About" element={<AboutContainer />} />
+              <Route path="/Contact" element={<ContactContainer />} />
               <Route path="/LogIn" element={<LogInContainer />} />
               <Route path="/Contact" element={<ContactContainer />} />
               <Route path="/Basket" element={<BasketContainer />} />

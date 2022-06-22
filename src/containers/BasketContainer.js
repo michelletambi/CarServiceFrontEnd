@@ -1,24 +1,41 @@
+import React from "react";
 import NavBar from "../components/NavBar";
+import { useState } from "react";
 
-const BasketContainer = () => {
+const BasketContainer = (value, item) => {
+    const [newRating, setNewRating] = useState("");
+    const {increment,decrement,removeItem}=value
+    const {id,make,img,price,total,count}=item;
 
     return (
         <> 
-         <NavBar />
+            <NavBar />
+            
             <h1 class id="yourcart"> Your basket 🧺</h1>
 
             <div className="results"> 
-              <h2> result <button id="addtobasket"> Add to basket </button></h2>
+              <h2> result 
+                <button id="addtobasket"> Add to basket </button>
+              </h2>
             </div>
-              <div class="grid grid-cols-4 gap-4">
-                <div>01</div>
-                <div>09</div>
-                </div>
-                <button
-                  className="btn btn-outline-danger text-uppercase mb-3 px-5"
-                  type="button"
-                >clear cart
-                </button>
+<div>
+    <div class="container">
+      <h4>Cart
+        <span class="price">
+          <i class="fa fa-shopping-cart"></i>
+          
+        </span>
+      </h4>
+
+      <p>Product 1 <span class="price">£</span> <button> - </button><input type="number" min="1" max="5" className="newCakeForm__input" id="ratingField" placeholder="rating" required
+          onChange={(e) => {setNewRating(e.target.value)}} />
+ <button> + </button> </p>
+      <hr/>
+      <p>Total: <span class="price"><b>£</b></span></p>
+    </div>
+  </div>
+
+
 
                 <footer className="footer"> 
                 <hr/>
