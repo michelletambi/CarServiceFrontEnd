@@ -12,7 +12,7 @@ const AboutContainer = () => {
             <h1 id="title">
                 Carz4FREEEEEEEE: About us...
             </h1>
-            <h3> Our rich, VIBRANT History</h3>
+            <h3> Our rich, VIBRANT History living one quarter mile at a time.</h3>
             <HomeSearch/>
             <CarFilter/>
             <Footer />
