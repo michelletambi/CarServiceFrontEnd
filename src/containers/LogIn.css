@@ -1,14 +1,41 @@
 /* Add padding to containers */
-#container {
-  background-color: blanchedalmond;
-  color: lightslategray;
+#light #container {
+  background-size: 300% 300%;
+  background-image: linear-gradient(
+          -45deg,
+          rgb(163, 3, 249) 0% 
+          rgb(164, 82, 194) 25%, 
+          rgba(87,111,230,1) 51%, 
+          rgba(59,173,227,1) 100%,
+    );  
+  animation: AnimateBG 20s ease infinite;
   border-radius: 1cm;
   border-color: azure;
   text-align: center;
   height: auto;
   width: 700px;
+  border: 0.5cm darkblue;
+  border-style:inset;
 }
 
+#dark #container{
+  background-size: 300% 300%;
+  background-image: linear-gradient(
+          -45deg,
+          rgb(163, 3, 249) 0% 
+          rgb(164, 82, 194) 25%, 
+          rgba(87,111,230,1) 51%, 
+          rgba(59,173,227,1) 100%,
+    );  
+  animation: AnimateBG 20s ease infinite;
+  border-radius: 1cm;
+  border-color: azure;
+  text-align: center;
+  height: auto;
+  width: 700px;
+  border: 0.5cm lightcyan;
+  border-style:inset;
+}
 
 header{
   display: flex;
@@ -16,22 +43,34 @@ header{
   justify-content: space-around;
 }
 
-logInBody{
+#logInBody{
   padding-left: 10%;
   padding-top: 5%;
   padding-right: 10%;
   padding-bottom: 5%;
-  background-color: lightgray;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
 }
 
-#heading{
+@keyframes AnimateBG { 
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+#light #heading{
   font-family: 'Changa One', cursive;
   font-variant-caps: small-caps;
   font-size: 55px;
-  color: rgb(203, 164, 113);
+  color: darkblue;
+}
+
+#dark #heading{
+  font-family: 'Changa One', cursive;
+  font-variant-caps: small-caps;
+  font-size: 55px;
+  color: lightcyan;
 }
 
 input[type=text], input[type=password] {
@@ -48,17 +87,45 @@ input[type=text], input[type=password] {
   box-sizing: border-box;
 }
 
-#b{
+#light #b{
   font-family: 'Changa One', cursive;
   font-variant-caps: small-caps;
   font-size: 25px;
-  color: rgb(203, 164, 113);
+  color: darkblue;
   flex-direction: column;
   position: sticky;
 }
 
-.loginButton {
-  background-color: #04AA6D;
+#dark #b{
+  font-family: 'Changa One', cursive;
+  font-variant-caps: small-caps;
+  font-size: 25px;
+  color: lightcyan;
+  flex-direction: column;
+  position: sticky;
+}
+
+#dark .loginButton {
+  background-color: lightcyan ;
+  font-family: 'Changa One', cursive;
+  font-variant-caps: small-caps;
+  font-size: 20px;
+  border-radius: 2cm;
+  color: black;
+  position: relative;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+}
+
+#light .loginButton {
+  background-color: darkblue;
+  font-family: 'Changa One', cursive;
+  font-variant-caps: small-caps;
+  font-size: 20px;
+  border-radius: 2cm;
   color: white;
   position: relative;
   padding: 14px 20px;

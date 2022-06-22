@@ -1,15 +1,33 @@
-.footer{
-  position: absolute;
+#Footer{
+  display: inline-flex;
+  justify-content: space-around;
   width: 100%;
-  display: table;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
+
+.helpline{
+  display: grid;
+  justify-content: right;
+}
+
+.socials{
+  display: grid;
+  justify-content: center;
+}
   
-  .copyrights{
-  text-align: center;
-  }
+.Legalstuff{
+  display: grid;
+  justify-content: left;
+}
+
+.copyrights{
+    display: flex-grid;
+    justify-content: center;
+    padding-top: 1cm;
+    padding-bottom: 1cm;
+}
   
   .fa-solid fa-inbox{
     height: 120%;
@@ -19,23 +37,44 @@
   
   }
 
-  ul{
+  #light ul{
     font-family: 'Changa One', cursive;
     font-variant-caps: small-caps;
     font-size: auto;
     color:darkslategrey;
   }
 
-  li{
+  #light li{
     font-family: 'Changa One', cursive;
     font-variant-caps: small-caps;
     font-size: auto;
     color:darkslategrey;
   }
 
-  p{
+  #light p{
     font-family: 'Changa One', cursive;
     font-variant-caps: small-caps;
     font-size: auto;
     color:darkslategrey;
+  }
+
+  #dark ul{
+    font-family: 'Changa One', cursive;
+    font-variant-caps: small-caps;
+    font-size: auto;
+    color:lightcyan;
+  }
+
+  #dark li{
+    font-family: 'Changa One', cursive;
+    font-variant-caps: small-caps;
+    font-size: auto;
+    color:lightcyan;
+  }
+
+  #dark p{
+    font-family: 'Changa One', cursive;
+    font-variant-caps: small-caps;
+    font-size: auto;
+    color:lightcyan;
   }

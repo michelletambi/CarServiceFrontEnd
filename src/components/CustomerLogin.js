@@ -17,8 +17,8 @@ const CustomerLogin = () => {
     useEffect(() => {
         getCustomerById();
     }, [id])
-    // console.log({customers});
-    // console.log({id});
+    console.log({customers});
+    console.log({id});
     return (
         <>
         <form>
@@ -34,12 +34,6 @@ const CustomerLogin = () => {
             setPassword(event.target.value)}/>
             {error && <p>{error}</p>}
             <input type = "submit" value = "Log in"/>
-            <ul>
-            {/* { customers.map(customer =>
-                    <li key={customer.id}>{`${customer.id}`}</li>
-                    )
-                } */}
-            </ul>
         </form>
         </>
     )

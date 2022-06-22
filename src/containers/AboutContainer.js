@@ -1,7 +1,5 @@
 import NavBar from "../components/NavBar";
-import DarkMode from "../components/Darkmode";
 import CarList from "../components/CarList";
-
 import Footer from "../components/Footer";
 
 const AboutContainer = () => {

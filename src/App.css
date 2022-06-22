@@ -2,27 +2,202 @@
 /* Main elements on the page... */
 
 #light {
-  background-color: aquamarine;
+    width: 100%;
+    height: 100%;
+    background-size: 300% 300%;
+    background-image: linear-gradient(
+          -45deg, 
+          rgb(166, 180, 244) 0%, 
+          rgb(169, 228, 243) 25%, 
+          rgb(153, 250, 232) 51%, 
+          rgb(127, 244, 185) 100%
+    );  
+    animation: AnimateBG 20s ease infinite;
 }
 
 #dark {
-  background: rgb(23,12,208);
-  background: linear-gradient(90deg, rgba(23,12,208,1) 0%, rgba(9,9,121,1) 49%, rgba(0,212,255,1) 100%);
+    width: 100%;
+    height: 100%;
+    background-size: 300% 300%;
+    background-image: linear-gradient(
+          -45deg, 
+          rgba(59,173,227,1) 0%, 
+          rgba(87,111,230,1) 25%, 
+          rgb(164, 82, 194) 51%, 
+          rgb(163, 3, 249) 100%
+    );  
+    animation: AnimateBG 20s ease infinite;
+  }
+  
+  @keyframes AnimateBG { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+  }
+
+  #navBar{
+    padding-left: 2.5cm;
+    padding-top: 1cm
+  }
+
+#light .buttonDesign{
+  /* background color */
+  background-size: 300% 300%;
+  background-image: linear-gradient(
+          -45deg, 
+          rgb(166, 180, 244) 0%, 
+          rgb(169, 228, 243) 25%, 
+          rgb(153, 250, 232) 51%, 
+          rgb(127, 244, 185) 100%
+    );  
+  animation: AnimateBG 20s ease infinite;
+  width: 200px;
+  flex-flow: row wrap;
+  /* border */
+  border: 2px solid rgb(198, 218, 236);
+  border-radius: 3px;
+  border-width: 3px;
+  border-style: solid;
+  /* text components */
+  color: darkblue;
+  font-family: 'Changa One', cursive;
+  font-variant-caps: small-caps;
+  font-size: 20px;
+  /* format */
+  padding: 10px 0 10px;
 }
 
+#dark .buttonDesign{
+  /* background colours */
+  background-size: 300% 300%;
+    background-image: linear-gradient(
+          -45deg, 
+          rgba(59,173,227,1) 0%, 
+          rgba(87,111,230,1) 25%, 
+          rgb(164, 82, 194) 51%, 
+          rgb(163, 3, 249) 100%
+    );  
+  animation: AnimateBG 20s ease infinite;
+  /* wrapping / size */
+  width: 200px;
+  flex-flow: row wrap;
+  /* border */
+  border: 2px solid rgb(173, 219, 245);
+  border-radius: 3px;
+  border-width: 3px;
+  border-style: solid;
+  /* text */
+  color: lightcyan;
+  font-family: 'Changa One', cursive;
+  font-variant-caps: small-caps;
+  font-size: 20px;
+  padding: 10px 0 10px;
+}
+
+#dark .basketAndLogIn{
+  /* background colours */
+  background-size: 300% 300%;
+    background-image: linear-gradient(
+          -45deg, 
+          rgba(59,173,227,1) 0%, 
+          rgba(87,111,230,1) 25%, 
+          rgb(164, 82, 194) 51%, 
+          rgb(163, 3, 249) 100%
+    );  
+  animation: AnimateBG 20s ease infinite;
+  /* wrapping / size */
+  width: 200px;
+  flex-flow: row wrap;
+  /* border */
+  border: 2px solid rgb(173, 219, 245);
+  border-radius: 3px;
+  border-width: 3px;
+  border-style: solid;
+  /* text */
+  color: lightcyan;
+  font-family: 'Changa One', cursive;
+  font-variant-caps: small-caps;
+  font-size: 20px;
+  padding: 10px 0 10px;
+}
+
+#light .basketAndLogIn{
+  /* background colours */
+  background-size: 300% 300%;
+    background-image: linear-gradient(
+          -45deg, 
+          rgb(166, 180, 244) 0%, 
+          rgb(169, 228, 243) 25%, 
+          rgb(153, 250, 232) 51%, 
+          rgb(127, 244, 185) 100%
+    );  
+  animation: AnimateBG 20s ease infinite;
+  /* wrapping / size */
+  width: 200px;
+  flex-flow: row wrap;
+  /* border */
+  border: 2px solid rgb(173, 219, 245);
+  border-radius: 3px;
+  border-width: 3px;
+  border-style: solid;
+  /* text */
+  color: darkblue;
+  font-family: 'Changa One', cursive;
+  font-variant-caps: small-caps;
+  font-size: 20px;
+  padding: 10px 0 10px;
+}
 /* Headings and text */
+
+
+#dark .switch{
+  color:lightcyan;
+  font-family: 'Changa One', cursive;
+  font-variant-caps: small-caps;
+  font-size: 35px;
+}
+
+#light .switch{
+  color:darkblue;
+  font-family: 'Changa One', cursive;
+  font-variant-caps: small-caps;
+  font-size: 35px;
+}
 
 *{
   list-style: none;
 } 
 
 #light .titleBar{
-background-color: burlywood;
+  background-size: 300% 300%;
+  background-image: linear-gradient(
+        -45deg, 
+        rgb(127, 244, 185) 0% 
+        rgb(153, 250, 232) 25%,
+        rgb(169, 228, 243) 51%,
+        rgb(166, 180, 244) 100%
+  );  
+  animation: AnimateBG 20s ease infinite;
+  width: auto;
+  text-align: center;
+  padding-left: 1cm;
+  padding: 10px;
 }
 
 #dark .titleBar{
-  background: rgb(23,12,208);
-  background: linear-gradient(90deg, rgba(23,12,208,1) 0%, rgba(9,9,121,1) 49%, rgba(0,212,255,1) 100%);
+  background-size: 300% 300%;
+  background-image: linear-gradient(
+          -45deg,
+          rgb(163, 3, 249) 0% 
+          rgb(164, 82, 194) 25%, 
+          rgba(87,111,230,1) 51%, 
+          rgba(59,173,227,1) 100%,
+    );  
+  animation: AnimateBG 20s ease infinite;
+  width: auto;
+  text-align: center;
+  padding-left: 1cm;
+  padding: 10px;
   }
 
 #search{
@@ -38,15 +213,6 @@ background-color: burlywood;
   background-color: rgb(248, 238, 222);
 }
 
-#titleBar{
-  background-color: blanchedalmond;
-  height: 500px;
-  width: auto;
-  text-align: center;
-  padding-left: 1cm;
-  padding: 10px;
-}
-
 #titleImage{
   background-color: blanchedalmond;
   height: 50px;
@@ -56,8 +222,8 @@ background-color: burlywood;
 #dark #title{
   font-family: 'Changa One', cursive;
   font-variant-caps: small-caps;
-  font-size: 70px;
-  color: antiquewhite;
+  font-size: 90px;
+  color: lightcyan;
   text-align: center;
   padding: 60px;
 }
@@ -65,17 +231,25 @@ background-color: burlywood;
 #light #title{
   font-family: 'Changa One', cursive;
   font-variant-caps: small-caps;
-  font-size: 70px;
-  color: darkslategray;
+  font-size: 90px;
+  color: darkblue;
   text-align: center;
   padding: 60px;
 }
 
-#subtitle{
+
+#light #subtitle{
   font-family: 'Changa One', cursive;
   font-variant-caps: small-caps;
-  font-size: 30px;
-  color: lightslategrey;
+  font-size: 40px;
+  color: darkblue;
+}
+
+#dark #subtitle{
+  font-family: 'Changa One', cursive;
+  font-variant-caps: small-caps;
+  font-size: 40px;
+  color: lightcyan;
 }
 
 #headingLeft{
@@ -122,42 +296,6 @@ background-color: burlywood;
 #trustPilot{
   height: 100px;
   width: 225px;
-}
-
-.navBar{
-  color: blue;
-}
-
-
-.buttonDesign{
-  color: lightslategrey;
-  background-color: blanchedalmond;
-  width: 200px;
-  flex-flow: row wrap;
-  border: 2px solid rgb(243, 217, 182);
-  border-radius: 3px;
-  border-width: 3px;
-  border-style: solid;
-  font-weight: bold;
-  font-size: medium;
-  padding: 10px 0 10px;
-}
-
-.basketAndLogIn{
-  color: lightslategrey;
-  background-color: blanchedalmond;
-  width: 200px;
-  flex-flow: row wrap;
-  border: 2px solid rgb(243, 217, 182);
-  border-radius: 3px;
-  border-width: 3px;
-  border-style: solid;
-  text-align: center;
-  align-items: flex-start;
-  font-weight: bold;
-  font-size: medium;
-  padding: 10px 10px 10px 10px;
-  border-image: space;
 }
 
 .footer{
