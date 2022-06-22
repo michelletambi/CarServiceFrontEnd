@@ -16,10 +16,10 @@ const BasketContainer = () => {
                     </span>
                   </h4>
                     <p>
-                      Product 1 <span class="price">£</span> <button> - </button><input type="number" min="1" max="5"  className="newCakeForm__input" id="ratingField" placeholder="rating" required onChange={(e) => {setNewRating(e.target.value)}} />
-                      <button> + </button> 
+                      Product 1 <span class="price">£</span> <button className="minus"> - </button><input type="number" min="1" max="5"  className="button_input" id="ratingField" placeholder="rating" required onChange={(e) => {setNewRating(e.target.value)}} />
+                      <button> </button>
                     </p>
-                    <hr/>
+                    <hr/> 
                     <p>Total: <span class="price"><b>£</b></span></p>
                 </div>
             </div>

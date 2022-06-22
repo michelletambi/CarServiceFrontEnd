@@ -184,6 +184,10 @@ text-align: center;
   transform: scale(5.5); 
 
 }
+.minus{
+  color: aqua;
+}
+
 
 #yourcart{
   text-align: center;
@@ -233,7 +237,7 @@ input[type=submit] {
 .containerForm {
   border-radius: 5px;
   padding: 19px auto;
-  max-width: 500px;
+  max-width: 300px;
   margin: 0 auto;
 }
 #Contactform{
