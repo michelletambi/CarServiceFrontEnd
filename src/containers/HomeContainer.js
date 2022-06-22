@@ -1,6 +1,5 @@
 import HomeSearch from "../components/HomeSearch";
 import CarList from "../components/CarList";
-import CarFilter from "../components/CarFilter";
 import NavBar from "../components/NavBar";
 // this handles all things on the homepage
 

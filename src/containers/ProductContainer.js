@@ -1,6 +1,6 @@
 import NavBar from "../components/NavBar";
 import DarkMode from "../components/Darkmode";
-import CarFilter from "../components/CarFilter";
+import CarList from "../components/CarList";
 import HomeSearch from "../components/HomeSearch";
 
 const ProductContainer = () => {
@@ -13,7 +13,7 @@ const ProductContainer = () => {
             </h1>
             <p> Here are some of our most popular products!</p>
             <HomeSearch/>
-            <CarFilter/>
+            <CarList/>
 
             <footer className="footer"> 
                 <hr/>
