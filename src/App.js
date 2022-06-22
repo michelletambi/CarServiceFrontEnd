@@ -1,25 +1,48 @@
-import React, { useState } from "react";
-import logo from './logo.svg';
 import './App.css';
+import "./Themes.js";
+import "./components/DarkMode.css";
 import HomeContainer from './containers/HomeContainer';
-import NavBar from './components/NavBar';
-import CarFilter from "./components/CarFilter";
 import {BrowserRouter as Router,Route, Routes,Switch,Link, BrowserRouter} from "react-router-dom";
 import BasketContainer from "./containers/BasketContainer";
 import LogInContainer from "./containers/LogInContainer";
+import WelcomeCustomerContainer from './containers/WelcomeCustomerContainer';
+import ProductContainer from './containers/ProductContainer';
+import AboutContainer from './containers/AboutContainer';
+import React, {useState} from "react";
+import { ThemeProvider } from "styled-components";
+import { lightTheme, darkTheme } from "./Themes.js"
 
 
 function App() {
+    
+
+  const [theme, setTheme] = useState("light");
+
+    const themeToggler = () => {
+        theme === "light" ? setTheme("dark") : setTheme("light");
+    };
+
+
   return (
-    <div>
-      <BrowserRouter>
-          <Routes>
-            <Route path="/Home" element={<HomeContainer />} />
-            <Route path="/LogIn" element={<LogInContainer />} />
-            <Route path="/Basket" element={<BasketContainer />} />
-          </Routes>
-      </BrowserRouter>
-    </div>
+    <body>
+      <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
+        <div>
+                <button id="darkModeBtn" onClick={() => themeToggler}>Theme Toggler</button>
+        </div>
+      <div>
+        <BrowserRouter>
+            <Routes>
+              <Route path="/" exact element={<HomeContainer />} />
+              <Route path="/Products" element={<ProductContainer />}/>
+              <Route path="/About" element={<AboutContainer />} />
+              <Route path="/LogIn" element={<LogInContainer />} />
+              <Route path="/Basket" element={<BasketContainer />} />
+              <Route path="/Welcome" element={<WelcomeCustomerContainer />} />
+            </Routes>
+        </BrowserRouter>
+      </div>
+      </ThemeProvider>
+    </body>
   );
 }
 

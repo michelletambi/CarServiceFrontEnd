@@ -1,19 +1,17 @@
-import DarkMode from "../components/Darkmode";
-import HomeSearch from "../components/HomeSearch";
-import CarFilter from "../components/CarFilter";
 import NavBar from "../components/NavBar";
+import DarkMode from "../components/Darkmode";
+import CarFilter from "../components/CarFilter";
+import HomeSearch from "../components/HomeSearch";
 
-const LogInContainer = () => {
+const ProductContainer = () => {
 
     return (
         <>
             <NavBar />
-            <div id="titleBar">
-                <h1 id="title">
-                    Welcome back to Carz4FREEEEEEEE
-                </h1>
-                <h2 id="subtitle">We missed you!</h2>
-            </div>
+            <h1 id="title">
+                Carz4FREEEEEEEE: Our Products
+            </h1>
+            <p> Here are some of our most popular products!</p>
             <HomeSearch/>
             <CarFilter/>
 
@@ -44,4 +42,4 @@ const LogInContainer = () => {
         </>
     );
 }
-export default LogInContainer;
+export default ProductContainer;
