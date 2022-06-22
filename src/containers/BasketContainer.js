@@ -27,17 +27,13 @@ const BasketContainer = (value, item) => {
         </span>
       </h4>
 
-      <p>Product 1 <span class="price">£</span> <button> - </button> <button> + </button> </p>
-      <button onClick={this.onAdderIncrease}>Increase the Adder</button>
-        <button onClick={this.onAdderDecrease}>Decrease the Adder</button>
+      <p>Product 1 <span class="price">£</span> <button> - </button><input type="number" min="1" max="5" className="newCakeForm__input" id="ratingField" placeholder="rating" required
+          onChange={(e) => {setNewRating(e.target.value)}} />
+ <button> + </button> </p>
       <hr/>
       <p>Total: <span class="price"><b>£</b></span></p>
     </div>
   </div>
-
-                    
-
-
 
 
 
