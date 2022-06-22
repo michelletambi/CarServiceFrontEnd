@@ -11,7 +11,7 @@ import AboutContainer from './containers/AboutContainer';
 import React, {useState} from "react";
 import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme } from "./Themes.js"
-
+import ContactContainer from './containers/ContactContainer';
 
 
 function App() {
@@ -36,6 +36,7 @@ function App() {
               <Route path="/" exact element={<HomeContainer />} />
               <Route path="/Products" element={<ProductContainer />}/>
               <Route path="/About" element={<AboutContainer />} />
+              <Route path="/Contact" element={<ContactContainer />} />
               <Route path="/LogIn" element={<LogInContainer />} />
               <Route path="/Basket" element={<BasketContainer />} />
               <Route path="/Welcome" element={<WelcomeCustomerContainer />} />

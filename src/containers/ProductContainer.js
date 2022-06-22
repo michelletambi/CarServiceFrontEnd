@@ -1,6 +1,5 @@
 import NavBar from "../components/NavBar";
 import DarkMode from "../components/Darkmode";
-import CarFilter from "../components/CarFilter";
 import HomeSearch from "../components/HomeSearch";
 
 const ProductContainer = () => {

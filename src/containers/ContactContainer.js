@@ -1,47 +1,32 @@
-import React from "react";
 import NavBar from "../components/NavBar";
-import { useState } from "react";
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-const BasketContainer = (value, item) => {
-    const [newRating, setNewRating] = useState("");
-    const {increment,decrement,removeItem}=value
-    const {id,make,img,price,total,count}=item;
 
+const ContactContainer = () => {
     return (
-        <> 
-            <NavBar />
-            
-            <h1 class id="yourcart"> Your basket 🧺</h1>
+        <>
+            <NavBar/>
+                <h3 id="Contactform">Contact Form</h3>
+            <div class="containerForm">
+                <form>
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder=" Your name.."></input>
 
-            <div className="results"> 
-              <h2> result 
-                <button id="addtobasket"> Add to basket </button>
-              </h2>
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder=" Your last name.."></input>
+
+                    <label for="lname">Email</label>
+                    <input type="text" id="lname" name="lastname" placeholder=" Your Email.."></input>
+
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Send us a message .."></textarea>
+
+                    <input type="submit" value="Submit"></input>
+                </form>
             </div>
-<div>
-    <div class="container">
-      <h4>Cart
-        <span class="price">
-          <i class="fa fa-shopping-cart"></i>
-          
-        </span>
-      </h4>
 
-      <p>Product 1 <span class="price">£</span> <button> - </button> <button> + </button> </p>
-      <button onClick={this.onAdderIncrease}>Increase the Adder</button>
-        <button onClick={this.onAdderDecrease}>Decrease the Adder</button>
-      <hr/>
-      <p>Total: <span class="price"><b>£</b></span></p>
-    </div>
-  </div>
-
-                    
-
-
-
-
-
-                <footer className="footer"> 
+            <footer className="footer"> 
                 <hr/>
                  <ul className="helpline">
                     <strong> Help and Support</strong>
@@ -68,4 +53,4 @@ const BasketContainer = (value, item) => {
         </>
     );
 }
-export default BasketContainer;
+export default ContactContainer;

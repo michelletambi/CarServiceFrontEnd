@@ -1,7 +1,7 @@
 function Footer() {
 
     return (
-        <footer id="footer"> 
+        <footer id="Footer"> 
             <hr/>
                  <ul className="helpline">
                     <strong> Help and Support</strong>
@@ -13,7 +13,7 @@ function Footer() {
                     <li>Contact Us</li>
                     <li><i class="fa-brands fa-twitter"></i></li>
                     <li><i class="fa-brands fa-facebook"></i></li>
-                    <li><i class="fa-brands fa-instagram"></i></li>
+                    <li className="insta"><i class="fa-brands fa-instagram" ></i></li>
                 </ul>
 
                 <ul className="Legalstuff"> 
@@ -22,7 +22,6 @@ function Footer() {
                     <li> Cookie Settings </li>
                     <li> Legal </li>
                 </ul>
-
                     <p className="copyrights"> 
                         © 2022 carz4free Ltd. All rights reserved. 
                     </p>

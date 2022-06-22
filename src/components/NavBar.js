@@ -28,7 +28,9 @@ function NavBar() {
                 <img src="http://cdn.onlinewebfonts.com/svg/img_230512.png" height="15" width="15"/>
             </button>
             </Link>
+        
         </div>
+        
     );
 }
 

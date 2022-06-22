@@ -1,47 +1,46 @@
-import DarkMode from "../components/Darkmode";
-import HomeSearch from "../components/HomeSearch";
-import CarFilter from "../components/CarFilter";
-import NavBar from "../components/NavBar";
+import axios from 'axios';
+import {useEffect, useState} from 'react';
 
-const LogInContainer = () => {
 
+const CustomerLogin = () => {
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const [id, setId] = useState("");
+    const [customers, setCustomers] = useState([]);
+    const[error, setError] = useState(null);
+    const customersUrl = `http://localhost:8080/customers/${id}`;
+    const getCustomerById = async () => {
+        const response = await axios.get(customersUrl);
+        setCustomers(response.data)
+    };
+    useEffect(() => {
+        getCustomerById();
+    }, [id])
+    // console.log({customers});
+    // console.log({id});
     return (
         <>
-            <NavBar />
-            <div id="titleBar">
-                <h1 id="title">
-                    Welcome back to Carz4FREEEEEEEE
-                </h1>
-                <h2 id="subtitle">We missed you!</h2>
-            </div>
-            <HomeSearch/>
-            <CarFilter/>
-
-            <footer className="footer"> 
-                <hr/>
-                 <ul className="helpline">
-                    <strong> Help and Support</strong>
-                    <li><i class="fa-solid fa-phone"></i> Call: 0800 1110 66</li>
-                    <li><i class="fa-solid fa-inbox"></i> Email: Carz4Free@Carz.com </li>
-                </ul>
-
-                <ul className="socials"> 
-                    <li>Contact Us</li>
-                    <li><i class="fa-brands fa-twitter"></i></li>
-                    <li><i class="fa-brands fa-facebook"></i></li>
-                    <li><i class="fa-brands fa-instagram"></i></li>
-                </ul>
-                <ul className="Legalstuff"> 
-                    <li> Terms and conditions </li>
-                    <li> Privacy Policy </li>
-                    <li> Cookie Settings </li>
-                    <li> Legal </li>
-                </ul>
-                    <p className="copyrights"> 
-                        © 2022 carz4free Ltd. All rights reserved. 
-                    </p>
-            </footer>
+        <form>
+            <label htmlFor = "email-address">Email:</label>
+            <input type = "text"
+            value = {id}
+            onChange = {event =>
+            setId(event.target.value)}/>
+            <label htmlFor = "password">Password</label>
+            {/* type is text for now just to check things work, later will change it to type = "password" */}
+            <input type = "text"
+            onChange = { event =>
+            setPassword(event.target.value)}/>
+            {error && <p>{error}</p>}
+            <input type = "submit" value = "Log in"/>
+            <ul>
+            {/* { customers.map(customer =>
+                    <li key={customer.id}>{`${customer.id}`}</li>
+                    )
+                } */}
+            </ul>
+        </form>
         </>
-    );
+    )
 }
-export default LogInContainer;
+export default CustomerLogin;
