@@ -2,6 +2,7 @@ import DarkMode from "../components/Darkmode";
 import HomeSearch from "../components/HomeSearch";
 import CarFilter from "../components/CarFilter";
 import NavBar from "../components/NavBar";
+import CustomerLogin from "../components/CustomerLogin";
 
 const LogInContainer = () => {
 
@@ -16,6 +17,7 @@ const LogInContainer = () => {
             </div>
             <HomeSearch/>
             <CarFilter/>
+            <CustomerLogin/>
 
             <footer className="footer"> 
                 <hr/>
