@@ -1,11 +1,6 @@
 import HomeSearch from "../components/HomeSearch";
-<<<<<<< HEAD
 import CarList from "../components/CarList";
 import CarFilter from "../components/CarFilter";
-=======
-import DarkMode from "../components/Darkmode";
-import CarList from "../components/CarList";
->>>>>>> 4419feb0e8aac91924d7399524d72abbcc6a0824
 import NavBar from "../components/NavBar";
 // this handles all things on the homepage
 
