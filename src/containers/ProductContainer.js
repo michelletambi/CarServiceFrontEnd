@@ -8,7 +8,7 @@ const ProductContainer = () => {
         <>
             <NavBar />
             <h1 id="title">
-                Carz4FREEEEEEEE: Our Products
+                Carz4FREE: Our Products
             </h1>
             <p> Here are some of our most popular products!</p>
             <CarList/>

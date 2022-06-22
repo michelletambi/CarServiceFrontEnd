@@ -22,8 +22,6 @@ const CarList = () => {
     console.log(query);
     // console.log(cars.filter(car => car.manufacturer.includes("Rover")));
     
-
- 
     return(
         <ul>
             <form>
