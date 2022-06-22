@@ -1,6 +1,8 @@
 import React from "react";
 import NavBar from "../components/NavBar";
 import { useState } from "react";
+import Footer from "../components/Footer.js";
+
 
 const BasketContainer = () => {
     const [newRating, setNewRating] = useState("");
@@ -16,14 +18,15 @@ const BasketContainer = () => {
                     </span>
                   </h4>
                     <p>
-                      Product 1 <span class="price">£</span> <button className="minus"> - </button><input type="number" min="1" max="5"  className="button_input" id="ratingField" placeholder="rating" required onChange={(e) => {setNewRating(e.target.value)}} />
-                      <button> </button>
+                      Product 1 <span class="price">£</span> <button> - </button><input type="number" min="1" max="5"  className="button_input" id="ratingField" placeholder="0" required onChange={(e) => {setNewRating(e.target.value)}} />
+                      <button> + </button>
                     </p>
                     <hr/> 
                     <p>Total: <span class="price"><b>£</b></span></p>
                 </div>
             </div>
-                <footer className="footer"> 
+            <Footer />
+                {/* <footer className="footer"> 
                 <hr/>
                  <ul className="helpline">
                     <strong> Help and Support</strong>
@@ -46,7 +49,7 @@ const BasketContainer = () => {
                     <p className="copyrights"> 
                         © 2022 Carz4free Ltd. All rights reserved. 
                     </p>
-            </footer>
+            </footer> */}
         </>
     );
 }
