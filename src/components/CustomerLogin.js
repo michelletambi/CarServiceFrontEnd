@@ -1,30 +1,25 @@
 import axios from 'axios';
 import {useEffect, useState} from 'react';
-const CustomerLogin = () => {
 
+
+
+const CustomerLogin = () => {
+    
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [id, setId] = useState("");
     const [customers, setCustomers] = useState([]);
     const[error, setError] = useState(null);
-
     const customersUrl = `http://localhost:8080/customers/${id}`;
-
     const getCustomerById = async () => {
         const response = await axios.get(customersUrl);
         setCustomers(response.data)
     };
-
     useEffect(() => {
         getCustomerById();
     }, [id])
-
     // console.log({customers});
     // console.log({id});
-   
-
-   
-    
     return (
         <>
         <form>
@@ -54,11 +49,6 @@ const CustomerLogin = () => {
         </form>
         </>
     )
-
-
-
-
-
 }
 
 export default CustomerLogin;

@@ -1,8 +1,11 @@
 .footer{
-    position: absolute;
-    width: 100%;
-  
-  }
+  position: absolute;
+  width: 100%;
+  display: table;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
   
   .copyrights{
   text-align: center;
@@ -14,4 +17,25 @@
   .fa-inbox:hoover{
     transform: scale(5.5); 
   
+  }
+
+  ul{
+    font-family: 'Changa One', cursive;
+    font-variant-caps: small-caps;
+    font-size: auto;
+    color:darkslategrey;
+  }
+
+  li{
+    font-family: 'Changa One', cursive;
+    font-variant-caps: small-caps;
+    font-size: auto;
+    color:darkslategrey;
+  }
+
+  p{
+    font-family: 'Changa One', cursive;
+    font-variant-caps: small-caps;
+    font-size: auto;
+    color:darkslategrey;
   }

@@ -1,0 +1,69 @@
+/* Add padding to containers */
+#container {
+  background-color: blanchedalmond;
+  color: lightslategray;
+  border-radius: 1cm;
+  border-color: azure;
+  text-align: center;
+  height: auto;
+  width: 700px;
+}
+
+
+header{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+logInBody{
+  padding-left: 10%;
+  padding-top: 5%;
+  padding-right: 10%;
+  padding-bottom: 5%;
+  background-color: lightgray;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+#heading{
+  font-family: 'Changa One', cursive;
+  font-variant-caps: small-caps;
+  font-size: 55px;
+  color: rgb(203, 164, 113);
+}
+
+input[type=text], input[type=password] {
+  font-family: 'Changa One', cursive;
+  font-variant-caps: small-caps;
+  font-size: 17px;
+  text-align: center;
+  color: lightblue;
+  width: 90%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+#b{
+  font-family: 'Changa One', cursive;
+  font-variant-caps: small-caps;
+  font-size: 25px;
+  color: rgb(203, 164, 113);
+  flex-direction: column;
+  position: sticky;
+}
+
+.loginButton {
+  background-color: #04AA6D;
+  color: white;
+  position: relative;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+}

@@ -1,21 +1,30 @@
-import React from "react";
 import NavBar from "../components/NavBar";
-import DarkMode from "../components/Darkmode";
-import CarList from "../components/CarList";
-import Customer from "../components/Customer";
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-const WelcomeCustomerContainer = () => {
 
+const ContactContainer = () => {
     return (
         <>
-            <NavBar />
-            <div id="titleBar">
-                <h1 id="title">
-                    Welcome back to Carz4FREEEEEEEE
-                </h1>
-                <h2 id="subtitle">We missed you!</h2>
+            <NavBar/>
+                <h3 id="Contactform">Contact Form</h3>
+            <div class="containerForm">
+                <form>
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name.."></input>
+
+                    <label for="lname"> Last Name </label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name.."></input>
+
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Your Email.."></input>
+
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Send us a message .."></textarea>
+
+                    <input type="submit" value="Submit"></input>
+                </form>
             </div>
-            <CarList/>
 
             <footer className="footer"> 
                 <hr/>
@@ -24,7 +33,6 @@ const WelcomeCustomerContainer = () => {
                     <li><i class="fa-solid fa-phone"></i> Call: 0800 1110 66</li>
                     <li><i class="fa-solid fa-inbox"></i> Email: Carz4Free@Carz.com </li>
                 </ul>
-
                 <ul className="socials"> 
                     <li>Contact Us</li>
                     <li><i class="fa-brands fa-twitter"></i></li>
@@ -38,11 +46,10 @@ const WelcomeCustomerContainer = () => {
                     <li> Legal </li>
                 </ul>
                     <p className="copyrights"> 
-                        © 2022 carz4free Ltd. All rights reserved. 
+                        © 2022 Carz4free Ltd. All rights reserved. 
                     </p>
             </footer>
         </>
     );
 }
-
-export default WelcomeCustomerContainer;
+export default ContactContainer;
