@@ -160,19 +160,6 @@ background-color: burlywood;
   border-image: space;
 }
 
-.footer{
-  position: absolute;
-  width: 100%;
-  display: table;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.copyrights{
-text-align: center;
-}
-
 #yourcart{
   text-align: center;
 }
