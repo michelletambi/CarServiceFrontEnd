@@ -58,7 +58,6 @@ input[type=text], input[type=password] {
 }
 
 .loginButton {
-  
   background-color: #04AA6D;
   color: white;
   position: relative;

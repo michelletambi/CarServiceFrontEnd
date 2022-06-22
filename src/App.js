@@ -8,7 +8,6 @@ import ProductContainer from './containers/ProductContainer';
 import AboutContainer from './containers/AboutContainer';
 import React, {useState} from "react";
 import './containers/LogIn.css';
-import CustomerLogin from './components/CustomerLogin';
 import LogInContainer from './containers/LogInContainer';
 import ContactContainer from './containers/ContactContainer';
 import { createContext } from 'react';
@@ -29,18 +28,16 @@ function App() {
   return (
     <ThemeContext.Provider value={ {theme, themeToggler}}>
         <div className="App" id={theme}>
-        <button id={theme} onClick={themeToggler}>Theme Toggler</button>
-        <BrowserRouter>
         <div className='switch'>
-          <ReactSwitch onChange={themeToggler} checked={theme === "dark"} />
+          <ReactSwitch onChange={themeToggler} checked={theme === "dark"}/>
         </div>
+        <BrowserRouter>
             <Routes>
               <Route path="/" exact element={<HomeContainer />} />
               <Route path="/Products" element={<ProductContainer />}/>
               <Route path="/About" element={<AboutContainer />} />
               <Route path="/Contact" element={<ContactContainer />} />
               <Route path="/LogIn" element={<LogInContainer />} />
-              <Route path="/Contact" element={<ContactContainer />} />
               <Route path="/Basket" element={<BasketContainer />} />
               <Route path="/Welcome" element={<WelcomeCustomerContainer />} />
             </Routes>
