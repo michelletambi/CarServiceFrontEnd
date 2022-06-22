@@ -22,7 +22,7 @@ function NavBar() {
                 <img src="https://cdn-icons-png.flaticon.com/512/152/152533.png" height="15" width="15"/>
             </button>
             </Link>
-            <Link to="/Basket">
+            <Link to="/LogIn">
             <button className="basketAndLogIn" type="submit">Basket <></>
                 <img src="http://cdn.onlinewebfonts.com/svg/img_230512.png" height="15" width="15"/>
             </button>
