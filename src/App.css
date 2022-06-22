@@ -138,3 +138,29 @@ text-align: center;
 
 }
 
+#yourcart{
+  text-align: center;
+}
+
+#cartcolumn{
+  
+display: flexbox;
+
+text-align: center;
+}
+
+#col-span-8{
+  padding-left: 200px;
+}
+.product{
+  padding-left:  200px; ;
+}
+
+.results{
+  padding-left: 200px;
+}
+
+#addtobasket{
+padding-left: 200px;
+}
+
