@@ -6,32 +6,46 @@ const CustomerLogin = () => {
     const [password, setPassword] = useState("");
     const [id, setId] = useState("");
     const [customers, setCustomers] = useState([]);
+    const[error, setError] = useState(null);
+
+    const customersUrl = `http://localhost:8080/customers/${id}`;
+
+    const getCustomerById = async () => {
+        const response = await axios.get(customersUrl);
+        setCustomers(response.data)
+    };
 
     useEffect(() => {
-        axios.get(`http://localhost:8080/customers/${id}`)
-        .then(response => setCustomers([response.data]));
-    }, [])
+        getCustomerById();
+    }, [id])
 
-    console.log(customers);
-    // console.log(filteredCustomers);
+    // console.log({customers});
+    // console.log({id});
+   
 
-
+   
     
-    
-    return(
-
+    return (
         <>
         <form>
             <label htmlFor = "email-address">Email:</label>
             <input type = "text"
+            value = {id}
             onChange = {event =>
-            setEmail(event.target.value)}/>
+            setId(event.target.value)}/>
             <label htmlFor = "password">Password</label>
             {/* type is text for now just to check things work, later will change it to type = "password" */}
             <input type = "text" 
             onChange = { event =>
             setPassword(event.target.value)}/>
+            {error && <p>{error}</p>}
             <input type = "submit" value = "Log in"/>
+            <ul>
+            {/* { customers.map(customer =>
+                    <li key={customer.id}>{`${customer.id}`}</li>
+                    )
+                } */}
+            </ul>
 
 
 
