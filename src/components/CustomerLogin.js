@@ -1,6 +1,8 @@
 import {useState, useEffect} from 'react';
 import { withRouter } from "react-router";
 import axios from 'axios';
+import { CustomerInfo } from '../Helper/Context';
+import CustomerBasket from './CustomerBasket';
 
 const CustomerLogin = () => {
     const [email, setEmail] = useState("");
@@ -46,7 +48,10 @@ const CustomerLogin = () => {
             // Sets the value as password
             onChange = {event => setPassword(event.target.value)} />
             <input type ="submit" value = "Log in"/>
-            {/* <p>{customer}</p> */}
+            <CustomerInfo.Provider value = {{customerName, setCustomerName, id, setId}}>
+            <CustomerBasket/>
+            </CustomerInfo.Provider>
+           
 
         </form>
         </>

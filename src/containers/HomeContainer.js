@@ -30,7 +30,7 @@ const HomeContainer = () => {
             <a  href = "link to review site"> <img src = "http://animalultrasoundassociation.org/wp-content/uploads/2019/08/trustpilot.jpg" alt = "Trust-pilot  stars image" id="trustPilot"/></a>
             {/* <HomeSearch/> */}
             <CarList/>
-            <CustomerLogin/>
+            {/* <CustomerLogin/> */}
             
            
 

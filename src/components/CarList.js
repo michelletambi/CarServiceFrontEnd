@@ -14,16 +14,15 @@ const CarList = () => {
     useEffect(() => {
         axios.get(`http://127.0.0.1:8080/filter_products/?Show%20only%20in-stock%20items=false${query}` )
             .then(res => {
-                const cars = res.data;
+                const cars = res.data.splice(0,5);
                 setCars(cars);
+                // cars.splice(0,10);
             }).catch((err) => console.log(err));
+            
         }, [query]
     );
     console.log(query);
-    // console.log(cars.filter(car => car.manufacturer.includes("Rover")));
-    
-
- 
+  
     return(
         <ul>
             <form>
