@@ -9,11 +9,6 @@
   background-color: darkblue;
 }
 
-
-
-
-
-
 /* Headings and text */
 
 *{
@@ -131,6 +126,7 @@ background-color: burlywood;
   color: blue;
 }
 
+
 .buttonDesign{
   color: lightslategrey;
   background-color: blanchedalmond;
@@ -174,20 +170,6 @@ background-color: burlywood;
 .copyrights{
 text-align: center;
 }
-
-
-.fa-inbox{
-  height: 120%;
-  
-}
-.fa-inbox:hoover{
-  transform: scale(5.5); 
-
-}
-.minus{
-  color: aqua;
-}
-
 
 #yourcart{
   text-align: center;

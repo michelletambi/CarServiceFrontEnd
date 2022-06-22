@@ -25,7 +25,7 @@ const LogInContainer = () => {
                 <input type="password" placeholder="Enter Password" name="psw" required>
                 </input>
                 <Link to="/Welcome">
-                <button className="loginButton" type="submit" >Login</button>
+                <button className="loginButton"type="submit" >Login</button>
                 </Link>
             </div>
             </form>
