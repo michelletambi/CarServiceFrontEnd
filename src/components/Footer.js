@@ -1,3 +1,5 @@
+import css from "./Footer.css";
+
 function Footer() {
 
     return (

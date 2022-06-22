@@ -1,7 +1,7 @@
 import React from "react";
 import NavBar from "../components/NavBar";
 import DarkMode from "../components/Darkmode";
-import HomeSearch from "../components/HomeSearch";
+import CarList from "../components/CarList";
 import Customer from "../components/Customer";
 
 const WelcomeCustomerContainer = () => {
@@ -9,10 +9,13 @@ const WelcomeCustomerContainer = () => {
     return (
         <>
             <NavBar />
-            <h1 id="title">
-                Welcome back to Carz4FREEEEEEEE!
-            </h1>
-            <HomeSearch/>
+            <div id="titleBar">
+                <h1 id="title">
+                    Welcome back to Carz4FREEEEEEEE
+                </h1>
+                <h2 id="subtitle">We missed you!</h2>
+            </div>
+            <CarList/>
 
             <footer className="footer"> 
                 <hr/>

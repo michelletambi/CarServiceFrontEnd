@@ -1,6 +1,7 @@
 import NavBar from "../components/NavBar";
 import DarkMode from "../components/Darkmode";
-import HomeSearch from "../components/HomeSearch";
+import CarList from "../components/CarList";
+
 import Footer from "../components/Footer";
 
 const AboutContainer = () => {
@@ -11,8 +12,8 @@ const AboutContainer = () => {
             <h1 id="title">
                 Carz4FREEEEEEEE: About us...
             </h1>
-            <h3> Our rich, VIBRANT History living one quarter mile at a time.</h3>
-            <HomeSearch/>
+            <h3> Our rich, VIBRANT History</h3>
+            <CarList/>
             <Footer />
         </>
     );

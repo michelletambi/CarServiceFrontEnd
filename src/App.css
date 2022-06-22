@@ -1,8 +1,44 @@
+
+/* Main elements on the page... */
+
+#light {
+  background-color: aquamarine;
+}
+
+#dark {
+  background-color: darkblue;
+}
+
+
+
+
+
+
+/* Headings and text */
+
 *{
   list-style: none;
+} 
+
+#light .titleBar{
+background-color: burlywood;
 }
-lightBody {
+
+#dark .titleBar{
   background-color: black;
+  }
+
+#search{
+  font-family: 'Changa One', cursive;
+  font-variant-caps: small-caps;
+  font-size: 25px;
+  color: lightslategrey;
+}
+
+#searchBar{
+  height: 30px;
+  width: 300px;
+  background-color: rgb(248, 238, 222);
 }
 
 #titleBar{
@@ -20,11 +56,20 @@ lightBody {
   width: 50px;
 }
 
-#title{
+#dark #title{
   font-family: 'Changa One', cursive;
   font-variant-caps: small-caps;
   font-size: 70px;
-  color: lightslategrey;
+  color: antiquewhite;
+  text-align: center;
+  padding: 60px;
+}
+
+#light #title{
+  font-family: 'Changa One', cursive;
+  font-variant-caps: small-caps;
+  font-size: 70px;
+  color: darkslategray;
   text-align: center;
   padding: 60px;
 }
