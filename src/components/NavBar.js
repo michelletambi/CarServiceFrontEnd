@@ -1,7 +1,6 @@
 import React from "react";
 import {Route, Routes, Link, BrowserRouter} from "react-router-dom"
 
-
 function NavBar() {
 
     return(
@@ -32,8 +31,5 @@ function NavBar() {
     );
 }
 
-
-        
-            
 
 export default NavBar;

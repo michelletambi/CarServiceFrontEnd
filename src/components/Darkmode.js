@@ -1,8 +1,6 @@
-import "../Themes.js";
+
 import "./DarkMode.css";
 import React, {useState} from "react";
-import { ThemeProvider } from "styled-components";
-import { lightTheme, darkTheme } from "../Themes.js";
 
 
 function DarkMode() {

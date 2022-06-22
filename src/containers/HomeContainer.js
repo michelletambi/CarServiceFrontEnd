@@ -1,6 +1,6 @@
-import HomeSearch from "../components/HomeSearch";
 import CarList from "../components/CarList";
 import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
 // this handles all things on the homepage
 
 
@@ -10,7 +10,7 @@ const HomeContainer = () => {
     return (
         <>
             <NavBar />
-            <div id="titleBar">
+            <div className="titleBar">
                 <h1 id="title">
                     <img src="https://www.freeiconspng.com/thumbs/car-icon-png/car-icon-png-25.png" id="titleImage"/>
                     Carz4FREEEEEEEE
@@ -32,30 +32,7 @@ const HomeContainer = () => {
             
            
 
-            <footer className="footer"> 
-                <hr/>
-                 <ul className="helpline">
-                    <strong> Help and Support</strong>
-                    <li><i class="fa-solid fa-phone"></i> Call: 0800 1110 66</li>
-                    <li><i class="fa-solid fa-inbox"></i> Email: Carz4Free@Carz.com </li>
-                </ul>
-
-                <ul className="socials"> 
-                    <li>Contact Us</li>
-                    <li><i class="fa-brands fa-twitter"></i></li>
-                    <li><i class="fa-brands fa-facebook"></i></li>
-                    <li><i class="fa-brands fa-instagram"></i></li>
-                </ul>
-                <ul className="Legalstuff"> 
-                    <li> Terms and conditions </li>
-                    <li> Privacy Policy </li>
-                    <li> Cookie Settings </li>
-                    <li> Legal </li>
-                </ul>
-                    <p className="copyrights"> 
-                        © 2022 carz4free Ltd. All rights reserved. 
-                    </p>
-            </footer>
+            <Footer/>
         </>
     );
 }

@@ -1,7 +1,6 @@
 import NavBar from "../components/NavBar";
 import DarkMode from "../components/Darkmode";
 import CarList from "../components/CarList";
-import HomeSearch from "../components/HomeSearch";
 
 const ProductContainer = () => {
 
@@ -12,7 +11,6 @@ const ProductContainer = () => {
                 Carz4FREEEEEEEE: Our Products
             </h1>
             <p> Here are some of our most popular products!</p>
-            <HomeSearch/>
             <CarList/>
 
             <footer className="footer"> 
