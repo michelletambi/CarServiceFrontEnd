@@ -1,8 +1,6 @@
 import axios from 'axios';
 import {useEffect, useState} from 'react';
 
-
-
 const CustomerLogin = () => {
     
     const [email, setEmail] = useState("");
@@ -11,6 +9,8 @@ const CustomerLogin = () => {
     const [customers, setCustomers] = useState([]);
     const[error, setError] = useState(null);
     const customersUrl = `http://localhost:8080/customers/${id}`;
+
+    
     const getCustomerById = async () => {
         const response = await axios.get(customersUrl);
         setCustomers(response.data)

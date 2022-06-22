@@ -1,6 +1,7 @@
 import CarList from "../components/CarList";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
+import CustomerLogin from "../components/CustomerLogin";
 // this handles all things on the homepage
 
 
@@ -29,6 +30,7 @@ const HomeContainer = () => {
             <a  href = "link to review site"> <img src = "http://animalultrasoundassociation.org/wp-content/uploads/2019/08/trustpilot.jpg" alt = "Trust-pilot  stars image" id="trustPilot"/></a>
             {/* <HomeSearch/> */}
             <CarList/>
+            <CustomerLogin/>
             
            
 
