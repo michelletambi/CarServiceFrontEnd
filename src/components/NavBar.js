@@ -6,18 +6,28 @@ function NavBar() {
 
     return(
         <div id="navBar">
-            <button className="buttonDesign">Home</button>
-            <button className="buttonDesign">About</button>
-            <button className="buttonDesign">Products</button>
-            <button className="buttonDesign">Contact</button> 
-        
+            <Link to="/">
+            <button className="buttonDesign" type="submit">Home</button>
+            </Link>
+            <Link to="/About">
+            <button className="buttonDesign" type="submit">About</button>
+            </Link>
+            <Link to="/Products">
+            <button className="buttonDesign" type="submit">Products</button>
+            </Link>
+            <Link to="/Contact">
+            <button className="buttonDesign" type="submit">Contact</button> 
+            </Link>
+            <Link to="/LogIn">
             <button class="basketAndLogIn" type="submit">Log in <></>
                 <img src="https://cdn-icons-png.flaticon.com/512/152/152533.png" height="15" width="15"/>
             </button>
-
-                <button className="basketAndLogIn" type="submit">Basket <></>
+            </Link>
+            <Link to="/Basket">
+            <button className="basketAndLogIn" type="submit">Basket <></>
                 <img src="http://cdn.onlinewebfonts.com/svg/img_230512.png" height="15" width="15"/>
-                </button>
+            </button>
+            </Link>
         </div>
     );
 }

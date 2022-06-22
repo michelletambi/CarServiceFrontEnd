@@ -1,0 +1,17 @@
+.footer{
+    position: absolute;
+    width: 100%;
+  
+  }
+  
+  .copyrights{
+  text-align: center;
+  }
+  
+  .fa-solid fa-inbox{
+    height: 120%;
+  }
+  .fa-inbox:hoover{
+    transform: scale(5.5); 
+  
+  }

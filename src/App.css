@@ -4,17 +4,80 @@
   list-style: none;
 } 
 
-#title{
+lightBody {
+  background-color: black;
+}
+
+#titleBar{
   background-color: blanchedalmond;
-  color: lightslategrey;
-  height: 200px;
+  height: 500px;
+  width: auto;
   text-align: center;
-  padding-top: 2cm;
+  padding-left: 1cm;
+  padding: 10px;
+}
+
+#titleImage{
+  background-color: blanchedalmond;
+  height: 50px;
+  width: 50px;
+}
+
+#title{
+  font-family: 'Changa One', cursive;
+  font-variant-caps: small-caps;
+  font-size: 70px;
+  color: lightslategrey;
+  text-align: center;
+  padding: 60px;
+}
+
+#subtitle{
+  font-family: 'Changa One', cursive;
+  font-variant-caps: small-caps;
+  font-size: 30px;
+  color: lightslategrey;
+}
+
+#headingLeft{
+  font-family: 'Changa One', cursive;
+  font-variant-caps: small-caps;
+  font-size: 30px;
+  color: lightslategrey;
+  text-align: left;
+  padding-left: 1cm;
+}
+
+#headingCenter{
+  font-family: 'Changa One', cursive;
+  font-variant-caps: small-caps;
+  font-size: 30px;
+  color: lightslategrey;
+  text-align: center;
+  padding-right: 1cm;
+  padding-left: 1cm;
+}
+
+#headingRight{
+  font-family: 'Changa One', cursive;
+  font-variant-caps: small-caps;
+  font-size: 30px;
+  color: lightslategrey;
+  text-align: right;
+  padding-right: 1cm;
+}
+
+#imageBox{
+  height: 800px;
+  width: auto;
+  background-color: lightslategray;
 }
 
 #image{
-  height: 540px;
-  width: 960px;
+  height: 740px;
+  width: 1360px;
+  padding-left: 2cm;
+  padding-top: 1cm;
 }
 
 #trustPilot{
@@ -62,6 +125,7 @@
   width: 100%;
 
 }
+
 .copyrights{
 text-align: center;
 }

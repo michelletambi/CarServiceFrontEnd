@@ -1,22 +1,25 @@
-import './DarkMode.css';
+import "../Themes.js";
+import "./DarkMode.css";
+import React, {useState} from "react";
+import { ThemeProvider } from "styled-components";
+import { lightTheme, darkTheme } from "../Themes.js";
+
 
 function DarkMode() {
 
-    // const button = document.querySelector("#button");
-    // const box = document.querySelector("#box");
-    
-    // const handleButtonClick = () => {
-    //     box.style.backgroundColor = "blue";
-    // }
+    const [theme, setTheme] = useState("light");
 
-    // button.addEventListener("click", handleButtonClick);
+    const themeToggler = () => {
+        theme === "light" ? setTheme("dark") : setTheme("light");
+    };
 
-    return(
+    return (
         <div>
-            <button id="button">Dark Mode</button>
-            <div id="box"></div>
+                <button id="darkModeBtn" onClick={() => themeToggler}>Theme Toggler</button>
         </div>
-    )
+    );
 }
+
+
 
 export default DarkMode;

@@ -1,19 +1,18 @@
+import React from "react";
+import NavBar from "../components/NavBar";
 import DarkMode from "../components/Darkmode";
 import HomeSearch from "../components/HomeSearch";
 import CarFilter from "../components/CarFilter";
-import NavBar from "../components/NavBar";
+import Customer from "../components/Customer";
 
-const LogInContainer = () => {
+const WelcomeCustomerContainer = () => {
 
     return (
         <>
             <NavBar />
-            <div id="titleBar">
-                <h1 id="title">
-                    Welcome back to Carz4FREEEEEEEE
-                </h1>
-                <h2 id="subtitle">We missed you!</h2>
-            </div>
+            <h1 id="title">
+                Welcome back to Carz4FREEEEEEEE!
+            </h1>
             <HomeSearch/>
             <CarFilter/>
 
@@ -44,4 +43,5 @@ const LogInContainer = () => {
         </>
     );
 }
-export default LogInContainer;
+
+export default WelcomeCustomerContainer;
