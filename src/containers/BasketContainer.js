@@ -2,41 +2,27 @@ import React from "react";
 import NavBar from "../components/NavBar";
 import { useState } from "react";
 
-const BasketContainer = (value, item) => {
+const BasketContainer = () => {
     const [newRating, setNewRating] = useState("");
-    const {increment,decrement,removeItem}=value
-    const {id,make,img,price,total,count}=item;
-
     return (
         <> 
             <NavBar />
-            
             <h1 class id="yourcart"> Your basket 🧺</h1>
-
-            <div className="results"> 
-              <h2> result 
-                <button id="addtobasket"> Add to basket </button>
-              </h2>
+            <div>
+              <div class="container">
+                  <h4>Cart
+                    <span class="price">
+                    <i class="fa fa-shopping-cart"></i>
+                    </span>
+                  </h4>
+                    <p>
+                      Product 1 <span class="price">£</span> <button className="minus"> - </button><input type="number" min="1" max="5"  className="button_input" id="ratingField" placeholder="rating" required onChange={(e) => {setNewRating(e.target.value)}} />
+                      <button> </button>
+                    </p>
+                    <hr/> 
+                    <p>Total: <span class="price"><b>£</b></span></p>
+                </div>
             </div>
-<div>
-    <div class="container">
-      <h4>Cart
-        <span class="price">
-          <i class="fa fa-shopping-cart"></i>
-          
-        </span>
-      </h4>
-
-      <p>Product 1 <span class="price">£</span> <button> - </button><input type="number" min="1" max="5" className="newCakeForm__input" id="ratingField" placeholder="rating" required
-          onChange={(e) => {setNewRating(e.target.value)}} />
- <button> + </button> </p>
-      <hr/>
-      <p>Total: <span class="price"><b>£</b></span></p>
-    </div>
-  </div>
-
-
-
                 <footer className="footer"> 
                 <hr/>
                  <ul className="helpline">
