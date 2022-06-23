@@ -1,4 +1,45 @@
-# Getting Started with Create React App
+**Client Side Project
+**
+
+**Project Description**
+
+This project is a car dealership webpage, allowing a customer to log in to their account using their id number. This is retrieved from the backend database, ensuring that the customer with said ID exists in the the database. Once logged in, they can view cars and add cars to their basket. 
+
+
+**Tech Stack**
+This project uses:
+- React
+- HTMl
+- CSS
+- Axios
+
+**Nice to haves**
+- Access the customer's basket through the database.
+- Search for a car by model.
+- Checkout and billing section.
+- Update customer's details.
+- User authentication.
+
+**Challenges**
+- Time management
+- Unfamiliarity with React
+- Accessing POST URL methods with Axios.
+- Understanding the thought process behind the server side of the project.
+
+**Installing the project**
+-Make sure you have React
+-Run npm install command which will install axios/React-router and all of our extra dependencies
+-Make sure you have access to the back end project and run the application is IntelliJ.
+
+**Team members**
+Michelle Tambi
+Scott Christie
+Hamza Abdilahi
+
+
+
+
+**Below is some useful information is using React**
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
