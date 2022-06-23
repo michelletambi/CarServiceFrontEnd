@@ -21,10 +21,10 @@
     background-size: 300% 300%;
     background-image: linear-gradient(
           -45deg, 
-          rgba(59,173,227,1) 0%, 
-          rgba(87,111,230,1) 25%, 
-          rgb(164, 82, 194) 51%, 
-          rgb(163, 3, 249) 100%
+          #3bade3 0%, 
+          #576fe6 25%, 
+          #a452c2 51%, 
+          #a303f9 100%
     );  
     animation: AnimateBG 20s ease infinite;
   }
@@ -87,7 +87,7 @@
   border-width: 3px;
   border-style: solid;
   /* text */
-  color: lightcyan;
+  color: #e0ffff;
   font-family: 'Changa One', cursive;
   font-variant-caps: small-caps;
   font-size: 20px;
@@ -147,8 +147,71 @@
   font-size: 20px;
   padding: 10px 0 10px;
 }
+
 /* Headings and text */
 
+#dark #accordionContent{
+  background-size: 300% 300%;
+    background-image: linear-gradient(
+          -45deg, 
+          rgba(59,173,227,1) 0%, 
+          rgba(87,111,230,1) 25%, 
+          rgb(164, 82, 194) 51%, 
+          rgb(163, 3, 249) 100%
+    );  
+  animation: AnimateBG 20s ease infinite;
+  width: auto;
+  text-align: center;
+  padding-top: 1cm;
+  padding-left: 1cm;
+  padding: 10px;
+}
+
+#light #accordionContent{
+  background-size: 300% 300%;
+  background-image: linear-gradient(
+        -45deg, 
+        rgb(127, 244, 185) 0%,
+        rgb(153, 250, 232) 25%,
+        rgb(169, 228, 243) 51%,
+        rgb(166, 180, 244) 100%
+  );  
+  animation: AnimateBG 20s ease infinite;
+  width: auto;
+  text-align: center;
+  padding-top: 1cm;
+  padding-left: 1cm;
+  padding: 10px;
+}
+
+
+#light #accordionIcon{
+  color: darkblue;
+}
+
+#dark #accordionIcon{
+  color: lightcyan;
+}
+
+#light #accordionHeader{
+  font-size: x-large;
+  color: darkblue;
+}
+
+#dark #accordionHeader{
+  font-size: x-large;
+  color: lightcyan;
+}
+
+#light #accordionBody{
+  font-size: x-large;
+  color: darkblue;
+}
+
+#dark #accordionBody{
+  font-size: x-large;
+  color: lightcyan;
+}
 
 #dark .switch{
   color:lightcyan;
@@ -172,7 +235,7 @@
   background-size: 300% 300%;
   background-image: linear-gradient(
         -45deg, 
-        rgb(127, 244, 185) 0% 
+        rgb(127, 244, 185) 0%
         rgb(153, 250, 232) 25%,
         rgb(169, 228, 243) 51%,
         rgb(166, 180, 244) 100%
@@ -200,17 +263,34 @@
   padding: 10px;
   }
 
-#search{
+#dark #search{
   font-family: 'Changa One', cursive;
   font-variant-caps: small-caps;
   font-size: 25px;
-  color: lightslategrey;
+  color: lightcyan;
+  padding-right: 0.5cm;
 }
 
-#searchBar{
+#light #search{
+  font-family: 'Changa One', cursive;
+  font-variant-caps: small-caps;
+  font-size: 25px;
+  color: darkblue;
+  padding-right: 0.5cm;
+}
+
+#light #searchBar{
   height: 30px;
   width: 300px;
-  background-color: rgb(248, 238, 222);
+  background-color: lightcyan;
+  color: darkblue;
+}
+
+#dark #searchBar{
+  height: 30px;
+  width: 300px;
+  background-color: lightcyan;
+  color: darkblue;
 }
 
 #titleImage{
@@ -252,30 +332,59 @@
   color: lightcyan;
 }
 
-#headingLeft{
+#dark #headingLeft{
   font-family: 'Changa One', cursive;
   font-variant-caps: small-caps;
   font-size: 30px;
-  color: lightslategrey;
+  color: lightcyan;
   text-align: left;
   padding-left: 1cm;
 }
 
-#headingCenter{
+#dark #headingCenter{
   font-family: 'Changa One', cursive;
   font-variant-caps: small-caps;
   font-size: 30px;
-  color: lightslategrey;
+  color: lightcyan;
   text-align: center;
   padding-right: 1cm;
   padding-left: 1cm;
 }
 
-#headingRight{
+#dark #headingRight{
   font-family: 'Changa One', cursive;
   font-variant-caps: small-caps;
   font-size: 30px;
-  color: lightslategrey;
+  color: lightcyan;
+  text-align: right;
+  padding-right: 1cm;
+}
+
+
+#light #headingLeft{
+  font-family: 'Changa One', cursive;
+  font-variant-caps: small-caps;
+  font-size: 30px;
+  color: darkblue;
+  text-align: left;
+  padding-left: 1cm;
+}
+
+#light #headingCenter{
+  font-family: 'Changa One', cursive;
+  font-variant-caps: small-caps;
+  font-size: 30px;
+  color: darkblue;
+  text-align: center;
+  padding-right: 1cm;
+  padding-left: 1cm;
+}
+
+#light #headingRight{
+  font-family: 'Changa One', cursive;
+  font-variant-caps: small-caps;
+  font-size: 30px;
+  color: darkblue;
   text-align: right;
   padding-right: 1cm;
 }
@@ -296,6 +405,7 @@
 #trustPilot{
   height: 100px;
   width: 225px;
+  padding-bottom: 1cm;
 }
 
 .footer{

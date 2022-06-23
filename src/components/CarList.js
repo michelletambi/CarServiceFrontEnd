@@ -28,7 +28,7 @@ const CarList = () => {
         <ul>
             <form>
                 <label id="search">Search:</label>
-                <input id="searchBar" type = "text" onChange = {(event) => setQuery(`&Manufacturer=${event.target.value}&Minimum%20Price=0`)}/>
+                <input id="searchBar" placeholder="Start typing to find your dream car!" type = "text" onChange = {(event) => setQuery(`&Manufacturer=${event.target.value}&Minimum%20Price=0`)}/>
                 <ul id="">
                     { cars.map(cars =>
                     <li key={cars.id}>{`${cars.manufacturer} | ${cars.model}`}</li>

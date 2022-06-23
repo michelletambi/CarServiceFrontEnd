@@ -10,23 +10,28 @@
 .helpline{
   display: grid;
   justify-content: right;
+  font-size: large;
 }
 
 .socials{
   display: grid;
   justify-content: center;
+  font-size: large;
 }
   
 .Legalstuff{
   display: grid;
   justify-content: left;
+  font-size: large;
 }
 
 .copyrights{
     display: flex-grid;
     justify-content: center;
+    padding-left: 3cm;
     padding-top: 1cm;
     padding-bottom: 1cm;
+    font-size: large;
 }
   
   .fa-solid fa-inbox{
