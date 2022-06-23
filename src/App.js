@@ -18,7 +18,7 @@ export const ThemeContext = createContext(null);
 function App() {
     
 
-  const [theme, setTheme] = useState("dark");
+  const [theme, setTheme] = useState("light");
 
     const themeToggler = () => {
         setTheme((currentTheme) => (currentTheme === "light" ? "dark" : "light"));
@@ -27,7 +27,7 @@ function App() {
 
   return (
     <ThemeContext.Provider value={ {theme, themeToggler}}>
-        <div className="App" id={theme}>
+        <body className="App" id={theme}>
         <div className='switch'>Theme
           <ReactSwitch onChange={themeToggler} checked={theme === "dark"}/>
           {theme}</div>
@@ -42,7 +42,7 @@ function App() {
               <Route path="/WelcomeBack" element={<CustomerBasket />} />
             </Routes>
         </BrowserRouter>
-      </div>
+      </body>
     </ThemeContext.Provider>
   );
 }

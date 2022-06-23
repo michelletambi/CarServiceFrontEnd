@@ -1,33 +1,21 @@
 /* Add padding to containers */
+@keyframes AnimateBG { 
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
 #light #container {
-  background-size: 300% 300%;
-  background-image: linear-gradient(
-          -45deg,
-          rgb(163, 3, 249) 0% 
-          rgb(164, 82, 194) 25%, 
-          rgba(87,111,230,1) 51%, 
-          rgba(59,173,227,1) 100%,
-    );  
-  animation: AnimateBG 20s ease infinite;
-  border-radius: 1cm;
-  border-color: azure;
-  text-align: center;
-  height: auto;
-  width: 700px;
-  border: 0.5cm darkblue;
-  border-style:inset;
+    border-radius: 1cm;
+    border-color: azure;
+    text-align: center;
+    height: auto;
+    width: 700px;
+    border: 0.5cm darkblue;
+    border-style:inset;
 }
 
 #dark #container{
-  background-size: 300% 300%;
-  background-image: linear-gradient(
-          -45deg,
-          rgb(163, 3, 249) 0% 
-          rgb(164, 82, 194) 25%, 
-          rgba(87,111,230,1) 51%, 
-          rgba(59,173,227,1) 100%,
-    );  
-  animation: AnimateBG 20s ease infinite;
   border-radius: 1cm;
   border-color: azure;
   text-align: center;
@@ -43,7 +31,17 @@ header{
   justify-content: space-around;
 }
 
-#logInBody{
+.elementBody{
+  display: inline-flex;
+  justify-content: space-around;
+  width: 100%;
+  text-align: center;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+
+#basketBody{
   padding-left: 10%;
   padding-top: 5%;
   padding-right: 10%;
@@ -51,12 +49,6 @@ header{
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-}
-
-@keyframes AnimateBG { 
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
 }
 
 #light #heading{
@@ -73,13 +65,64 @@ header{
   color: lightcyan;
 }
 
-input[type=text], input[type=password] {
+#dark input[type=uname], input [type=password] {
   font-family: 'Changa One', cursive;
   font-variant-caps: small-caps;
   font-size: 17px;
   text-align: center;
-  color: lightblue;
-  width: 90%;
+  color: darkblue;
+  background-color: lightcyan;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 0.4cm;
+}
+
+#light input[type=uname], input [type=password] {
+  font-family: 'Changa One', cursive;
+  font-variant-caps: small-caps;
+  font-size: 17px;
+  text-align: center;
+  color: lightcyan;
+  background-color: darkblue;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 0.4cm;
+}
+
+
+#dark input[type=text] {
+  font-family: 'Changa One', cursive;
+  font-variant-caps: small-caps;
+  font-size: 15px;
+  text-align: center;
+  color: darkblue;
+  background-color: lightcyan;
+  width: auto;
+  height: 35px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+#light input[type=text] {
+  font-family: 'Changa One', cursive;
+  font-variant-caps: small-caps;
+  font-size: 15px;
+  text-align: center;
+  color: lightcyan;
+  background-color: darkblue;
+  width: auto;
+  height: 35px;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;

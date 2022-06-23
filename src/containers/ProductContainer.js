@@ -47,12 +47,12 @@ const ProductContainer = () => {
 
     return (
         <>
-            <NavBar />
-            <h1 id="title">
-                Carz4FREE: Our Products
-            </h1>
-
+            <header>
+                <NavBar />
+            </header>
+            <h1 id="title">Carz4FREE: Our Products</h1>
             <h3 id="headingCenter"> Here are some of our most popular products!</h3>
+            <main>
             <Accordion id="accordionContent">
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
@@ -344,10 +344,7 @@ const ProductContainer = () => {
                     <button className="addToBasket" id="basketEight" onClick = {handleButton8}>Add to basket</button>
                 </AccordionDetails>
             </Accordion>
-
-
-
-            
+            </main>
             <CarList/>
             <Footer/>
         </>
