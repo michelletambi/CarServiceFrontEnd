@@ -17,7 +17,7 @@ function Footer() {
                     <li>Contact Us</li>
                     <li><i class="fa-brands fa-twitter"></i></li>
                     <li><i class="fa-brands fa-facebook"></i></li>
-                    <li className="insta"><i class="fa-brands fa-instagram" ></i></li>
+                    <li className="insta"><i class="fa-brands fa-instagram"></i></li>
             </ul>
 
             <ul className="Legalstuff"> 
