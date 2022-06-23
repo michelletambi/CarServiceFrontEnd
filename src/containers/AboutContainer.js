@@ -8,7 +8,7 @@ const AboutContainer = () => {
         <>
             <NavBar />
             <h1 id="title">
-                Carz4FREEEEEEEE: About us...
+                Carz4FREE: About us...
             </h1>
             <h3> Our rich, VIBRANT History</h3>
             <CarList/>

@@ -5,7 +5,7 @@ const CustomerBasket = () =>{
 
     const {customerName, setCustomerName, id, setId} = useContext(CustomerInfo);
 
-    
+
 
 
     
