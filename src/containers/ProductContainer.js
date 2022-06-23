@@ -1,3 +1,5 @@
+import React from "react";
+import '../components/Products.css'
 import NavBar from "../components/NavBar";
 import CarList from "../components/CarList";
 import Footer from "../components/Footer";
@@ -12,6 +14,11 @@ import {BsFillHandThumbsUpFill} from "react-icons/bs";
 import {AiFillCar} from "react-icons/ai";
 
 const ProductContainer = () => {
+    // count keep track of the button clicks
+    // let count = 0;
+    const count = 0;
+
+
 
     return (
         <>
