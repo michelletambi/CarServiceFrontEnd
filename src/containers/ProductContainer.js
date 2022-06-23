@@ -20,9 +20,29 @@ const ProductContainer = () => {
 
     const {customerName, setCustomerName, id, setId} = useContext(CustomerInfo);
  
+    const handleButton1 = () => {
+        document.getElementById("basketOne").innerHTML = "This product has been added to your basket";
+    }
+    const handleButton2 = () => {
+        document.getElementById("basketTwo").innerHTML = "This product has been added to your basket";
+    }
     const handleButton3 = () => {
-        document.getElementById("pBasket3").innerHTML = "This product has been added to your basket";
-        
+        document.getElementById("basketThree").innerHTML = "This product has been added to your basket";
+    }
+    const handleButton4 = () => {
+        document.getElementById("basketFour").innerHTML = "This product has been added to your basket";
+    }
+    const handleButton5 = () => {
+        document.getElementById("basketFive").innerHTML = "This product has been added to your basket";
+    }
+    const handleButton6 = () => {
+        document.getElementById("basketSix").innerHTML = "This product has been added to your basket";
+    }
+    const handleButton7 = () => {
+        document.getElementById("basketSeven").innerHTML = "This product has been added to your basket";
+    }
+    const handleButton8 = () => {
+        document.getElementById("basketEight").innerHTML = "This product has been added to your basket";
     }
    
     return (
@@ -65,7 +85,7 @@ const ProductContainer = () => {
                     </Typography>
                     </div>
                     <p id = "pBasket1">This item</p>
-                    <button className="addToBasket" id="basketOne">Add to basket</button>
+                    <button className="addToBasket" id="basketOne" onClick = {handleButton1}>Add to basket</button>
                 </AccordionDetails>
             </Accordion>
 
@@ -101,8 +121,7 @@ const ProductContainer = () => {
                         Power: 8000rpm
                     </Typography>
                     </div>
-                    <p id = "pBasket3"></p>
-                    <button className="addToBasket" id="basket3" onClick = {handleButton3}>Add to basket</button>
+                    <button className="addToBasket" id="basketTwo" onClick = {handleButton2}>Add to basket</button>
                 </AccordionDetails>
             </Accordion>
 
@@ -139,7 +158,7 @@ const ProductContainer = () => {
                     </Typography>
                     </div>
                     <p id = "pBasket4"></p>
-                    <button className="addToBasket" id="basket4">Add to basket</button>
+                    <button className="addToBasket" id="basketThree" onClick = {handleButton3}>Add to basket</button>
                 </AccordionDetails>
             </Accordion>
 
@@ -176,7 +195,7 @@ const ProductContainer = () => {
                     </Typography>
                     </div>
                     <p id = "pBasket5"></p>
-                    <button className="addToBasket" id="basket5">Add to basket</button>
+                    <button className="addToBasket" id="basketFour" onClick = {handleButton4}>Add to basket</button>
                 </AccordionDetails>
             </Accordion>
 
@@ -213,7 +232,7 @@ const ProductContainer = () => {
                     </Typography>
                     </div>
                     <p id = "pBasket2">This item </p>
-                    <button className="addToBasket" id="basketTwo">Add to basket</button>
+                    <button className="addToBasket" id="basketFive" onClick = {handleButton5}>Add to basket</button>
                 </AccordionDetails>
             </Accordion>
 
@@ -249,7 +268,7 @@ const ProductContainer = () => {
                         Power: 5000rpm
                     </Typography>
                     </div>
-                    <button className="addToBasket">Add to basket</button>
+                    <button className="addToBasket" id="basketSix" onClick = {handleButton6}>Add to basket</button>
                 </AccordionDetails>
             </Accordion>
 
@@ -286,7 +305,7 @@ const ProductContainer = () => {
                     </Typography>
                     </div>
                     <p id = "pBasket3"></p>
-                    <button className="addToBasket" id="basket3" onClick = {handleButton3}>Add to basket</button>
+                    <button className="addToBasket" id="basketSeven" onClick = {handleButton7}>Add to basket</button>
                 </AccordionDetails>
             </Accordion>
 
@@ -322,7 +341,7 @@ const ProductContainer = () => {
                         Power: 236bhp
                     </Typography>
                     </div>
-                    <button className="addToBasket">Add to basket</button>
+                    <button className="addToBasket" id="basketEight" onClick = {handleButton8}>Add to basket</button>
                 </AccordionDetails>
             </Accordion>
 

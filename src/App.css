@@ -537,6 +537,14 @@ input[type=submit] {
   text-align: center;
 
 }
+#history{
+  text-align: center;
+}
+
+#placeholder{
+  text-align: center;
+border-radius: 1px solid black;
+}
 
 
 /*------------ media Queries section -------------*/
