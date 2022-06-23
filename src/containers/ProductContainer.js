@@ -26,7 +26,7 @@ const ProductContainer = () => {
             <h1 id="title">
                 Carz4FREE: Our Products
             </h1>
-            <p className="products"> cars </p>
+            <h3 id="headingCenter"> Here are some of our most popular products!</h3>
 
             <Accordion id="accordionContent">
                 <AccordionSummary
@@ -51,10 +51,10 @@ const ProductContainer = () => {
                         Type: Manual
                     </Typography>
                     <Typography id="accordionBody">
-                        Top Speed: 325km/h
+                        Top Speed: 202mph
                     </Typography>
                     <Typography id="accordionBody">
-                        Price: 17,995 or FREE with us
+                        Price: £149,995 or FREE with us
                     </Typography>
                     <Typography id="accordionBody">
                         Power: 8000rpm
@@ -81,10 +81,13 @@ const ProductContainer = () => {
                         The Ford Escort Cabriolet 1990
                     </Typography>
                     <Typography id="accordionBody">
-                        Engine: 1.8i Petrol
+                        Engine: 1.6i Petrol
                     </Typography>
                     <Typography id="accordionBody">
                         Type: Manual
+                    </Typography>
+                    <Typography id="accordionBody">
+                        Top Speed: 116mph
                     </Typography>
                     <Typography id="accordionBody">
                         Price: 17,995 or FREE with us
@@ -97,6 +100,41 @@ const ProductContainer = () => {
                 </AccordionDetails>
             </Accordion>
 
+            <Accordion id="accordionContent">
+                <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel1a-content"
+                    id="panel1a-header">
+                    <Typography id="accordionIcon"><AiFillCar size="35px"/></Typography>
+                    <Typography id="accordionHeader">Volkswagen Golf 2019</Typography>
+                </AccordionSummary>
+                <AccordionDetails id="accordion-details">
+                    <div id="image-accordion-position">
+                <img src="https://cdn.euroncap.com/media/56959/volkswagen-golf.png" height="200px" width="300px" alt ="me"/>
+                    </div>
+                    <div id="text-accordion-position">
+                    <Typography id="accordionBody">
+                        Volkswagen Golf 2019
+                    </Typography>
+                    <Typography id="accordionBody">
+                        Engine: 1.4L Petrol
+                    </Typography>
+                    <Typography id="accordionBody">
+                        Type: Automatic
+                    </Typography>
+                    <Typography id="accordionBody">
+                        Top Speed: 155mph
+                    </Typography>
+                    <Typography id="accordionBody">
+                        Price: 25,245 or FREE with us
+                    </Typography>
+                    <Typography id="accordionBody">
+                        Power: 5000rpm
+                    </Typography>
+                    </div>
+                    <button id="addToBasket">Add to basket</button>
+                </AccordionDetails>
+            </Accordion>
 
             <Accordion id="accordionContent">
                 <AccordionSummary
@@ -104,36 +142,72 @@ const ProductContainer = () => {
                     aria-controls="panel1a-content"
                     id="panel1a-header">
                     <Typography id="accordionIcon"><AiFillCar size="35px"/></Typography>
-                    <Typography id="accordionHeader">Lamborghini Huracan Tecnica</Typography>
+                    <Typography id="accordionHeader">Ford Puma 2019</Typography>
                 </AccordionSummary>
                 <AccordionDetails id="accordion-details">
                     <div id="image-accordion-position">
-                <img src="https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/gallery_slide/public/1-lamborghini-huracan-evo-rwd-2020-rt-hero-front.jpg?itok=Y6vt80vl" height="200px" width="300px" alt ="me"/>
+                <img src="https://parkers-images.bauersecure.com/pagefiles/307918/ford-puma.jpg" height="200px" width="300px" alt ="me"/>
                     </div>
                     <div id="text-accordion-position">
                     <Typography id="accordionBody">
-                        Lamborghini Huracan Tecnica
+                        Ford Puma 2019
                     </Typography>
                     <Typography id="accordionBody">
-                        Engine: V10
+                        Fuel Capacity: 1.0L 3-cyclinder
                     </Typography>
                     <Typography id="accordionBody">
                         Type: Manual
                     </Typography>
                     <Typography id="accordionBody">
-                        Top Speed: 325km/h
+                        Top Speed: 124mph
                     </Typography>
                     <Typography id="accordionBody">
-                        Price: 17,995 or FREE with us
+                        Price: £24,405 or FREE with us
                     </Typography>
                     <Typography id="accordionBody">
-                        Power: 8000rpm
+                        Power: 152bhp
                     </Typography>
                     </div>
                     <button id="addToBasket">Add to basket</button>
                 </AccordionDetails>
             </Accordion>
-            <p> Here are some of our most popular products!</p>
+
+            <Accordion id="accordionContent">
+                <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel1a-content"
+                    id="panel1a-header">
+                    <Typography id="accordionIcon"><AiFillCar size="35px"/></Typography>
+                    <Typography id="accordionHeader">Land Rover Discovery</Typography>
+                </AccordionSummary>
+                <AccordionDetails id="accordion-details">
+                    <div id="image-accordion-position">
+                <img src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Land-Rover/Discovery/8514/1646805311941/front-left-side-47.jpg?tr=w-270" height="200px" width="300px" alt ="me"/>
+                    </div>
+                    <div id="text-accordion-position">
+                    <Typography id="accordionBody">
+                        Land Rover Discovery Landmark Edition 2017
+                    </Typography>
+                    <Typography id="accordionBody">
+                        Fuel Capacity: 77L
+                    </Typography>
+                    <Typography id="accordionBody">
+                        Type: Manual
+                    </Typography>
+                    <Typography id="accordionBody">
+                        Top Speed: 121mph
+                    </Typography>
+                    <Typography id="accordionBody">
+                        Price: £55,535 or FREE with us
+                    </Typography>
+                    <Typography id="accordionBody">
+                        Power: 236bhp
+                    </Typography>
+                    </div>
+                    <button id="addToBasket">Add to basket</button>
+                </AccordionDetails>
+            </Accordion>
+            
             <CarList/>
             <Footer/>
         </>
