@@ -11,6 +11,7 @@ import LogInContainer from './containers/LogInContainer';
 import ContactContainer from './containers/ContactContainer';
 import { createContext } from 'react';
 import ReactSwitch from "react-switch";
+import CustomerBasket from './components/CustomerBasket';
 
 export const ThemeContext = createContext(null);
 
@@ -38,7 +39,7 @@ function App() {
               <Route path="/Contact" element={<ContactContainer />} />
               <Route path="/LogIn" element={<LogInContainer />} />
               <Route path="/Basket" element={<BasketContainer />} />
-              <Route path="/Welcome" element={<WelcomeCustomerContainer />} />
+              <Route path="/WelcomeBack" element={<CustomerBasket />} />
             </Routes>
         </BrowserRouter>
       </div>

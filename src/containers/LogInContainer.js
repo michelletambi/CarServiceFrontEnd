@@ -16,18 +16,6 @@ const LogInContainer = () => {
         <body id="logInBody">
             <form>
             <div id="container">
-                {/* <h1 id="heading">Log in</h1>
-
-                <label for="uname"><b id="b">Username</b></label>
-                <input type="text" placeholder="Enter Id/User" name="uname" required>
-                </input>
-
-                <label for="psw"><b id="b">Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
-                </input>
-                <Link to="/Welcome">
-                <button className="loginButton"type="submit" >Login</button>
-                </Link> */}
                 <CustomerLogin/>
             </div>
             </form>
