@@ -8,10 +8,10 @@ const ContactContainer = () => {
     return (
         <>
             <NavBar/>
-                <h3 id="Contactform">Contact Form</h3>
+                <h3 id="headingCenter">Contact Form</h3>
             <div class="containerForm">
                 <form>
-                    <label for="fname">First Name</label>
+                    <label id="headingLeft">First Name</label>
                     <input type="text" id="fname" name="firstname" placeholder="Your name.."></input>
 
                     <label for="lname"> Last Name </label>

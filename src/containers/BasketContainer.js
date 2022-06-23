@@ -6,11 +6,13 @@ import Footer from "../components/Footer.js";
 
 
 const BasketContainer = () => {
-    const [newRating, setNewRating] = useState("");
+
+    // const [newRating, setNewRating] = useState("");
+
     return (
         <> 
             <NavBar />
-            <h1 class id="yourcart"> Your basket 🧺</h1>
+            {/* <h1 class id="yourcart"> Your basket 🧺</h1>
             <div>
               <div class="container">
                   <h4>Cart
@@ -19,13 +21,13 @@ const BasketContainer = () => {
                     </span>
                   </h4>
                     <p>
-                      Product 1 <span class="price">£</span> <button> - </button><input type="number" min="1" max="5"  className="button_input" id="ratingField" placeholder="0" required onChange={(e) => {setNewRating(e.target.value)}} />
+                      Product 1 <span class="price">£</span> <button> - </button><input type="number" min="1" max="5"  className="button_input" id="ratingField" placeholder="0" required onChange={(e) => {setNewRating(e.target.value)}} /> 
                       <button> + </button>
                     </p>
                     <hr/> 
                     <p>Total: <span class="price"><b>£</b></span></p>
                 </div>
-            </div>
+            </div> */}
             <Footer />
         </>
     );

@@ -19,13 +19,14 @@ const ProductContainer = () => {
         document.getElementById("pBasket3").innerHTML = "This product has been added to your basket";
         
     }
-   
+
     return (
         <>
             <NavBar />
             <h1 id="title">
                 Carz4FREE: Our Products
             </h1>
+
             <h3 id="headingCenter"> Here are some of our most popular products!</h3>
 
             <Accordion id="accordionContent">
@@ -60,7 +61,6 @@ const ProductContainer = () => {
                         Power: 8000rpm
                     </Typography>
                     </div>
-                    <p id = "pBasket1">This item</p>
                     <button className="addToBasket" id="basketOne">Add to basket</button>
                 </AccordionDetails>
             </Accordion>
@@ -97,7 +97,6 @@ const ProductContainer = () => {
                         Power: 8000rpm
                     </Typography>
                     </div>
-                    <p id = "pBasket3"></p>
                     <button className="addToBasket" id="basket3" onClick = {handleButton3}>Add to basket</button>
                 </AccordionDetails>
             </Accordion>

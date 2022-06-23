@@ -24,9 +24,9 @@ function NavBar() {
             <button className="buttonDesign" type="submit">Contact <BsFillChatLeftTextFill/></button> 
             </Link>
             <Link to="/LogIn">
-            <button class="basketAndLogIn" type="submit">Log in <AiOutlineLogin/></button>
+            <button className="basketAndLogIn" type="submit">Log in <AiOutlineLogin/></button>
             </Link>
-            <Link to="/LogIn">
+            <Link to="/Basket">
             <button className="basketAndLogIn" type="submit">Basket <BsFillBasket2Fill/></button>
             </Link>
         

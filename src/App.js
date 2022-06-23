@@ -36,9 +36,9 @@ function App() {
               <Route path="/" exact element={<HomeContainer />} />
               <Route path="/Products" element={<ProductContainer />}/>
               <Route path="/About" element={<AboutContainer />} />
-              <Route path="/Contact" element={<ContactContainer />} />
+              <Route path="/Contact" element={<ContactContainer />}/>
+              <Route path="/Basket" element={<BasketContainer />} /> 
               <Route path="/LogIn" element={<LogInContainer />} />
-              <Route path="/Basket" element={<BasketContainer />} />
               <Route path="/WelcomeBack" element={<CustomerBasket />} />
             </Routes>
         </BrowserRouter>
