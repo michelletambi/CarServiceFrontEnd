@@ -11,7 +11,7 @@ const WelcomeCustomerContainer = () => {
             <NavBar />
             <div id="titleBar">
                 <h1 id="title">
-                    Welcome back to Carz4FREEEEEEEE
+                    Welcome back to Carz4FREE
                 </h1>
                 <h2 id="subtitle">We missed you!</h2>
             </div>

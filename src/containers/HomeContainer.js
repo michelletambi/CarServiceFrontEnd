@@ -3,6 +3,7 @@ import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import {AiTwotoneCar} from "react-icons/ai";
 import HomeComponents from "../components/HomeComponents";
+import CustomerLogin from "../components/CustomerLogin";
 // this handles all things on the homepage
 
 
@@ -27,6 +28,10 @@ const HomeContainer = () => {
             {/* <HomeSearch/> */}
             <HomeComponents />
             <CarList/>
+            {/* <CustomerLogin/> */}
+            
+           
+
             <Footer/>
         </>
     );

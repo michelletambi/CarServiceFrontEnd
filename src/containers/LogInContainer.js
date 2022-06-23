@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import {Route, Routes, Link, BrowserRouter} from "react-router-dom"
 import axios from 'axios';
 import {useEffect, useState} from 'react';
+import CustomerLogin from "../components/CustomerLogin";
 
 const LogInContainer = () => {
 
@@ -15,7 +16,7 @@ const LogInContainer = () => {
         <body id="logInBody">
             <form>
             <div id="container">
-                <h1 id="heading">Log in</h1>
+                {/* <h1 id="heading">Log in</h1>
 
                 <label for="uname"><b id="b">Username</b></label>
                 <input type="text" placeholder="Enter Id/User" name="uname" required>
@@ -26,7 +27,8 @@ const LogInContainer = () => {
                 </input>
                 <Link to="/Welcome">
                 <button className="loginButton"type="submit" >Login</button>
-                </Link>
+                </Link> */}
+                <CustomerLogin/>
             </div>
             </form>
         </body>
