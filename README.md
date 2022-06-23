@@ -3,7 +3,7 @@
 
 **Project Description**
 
-This project is a car dealership webpage, allowing a customer to log in to their account using their id number. This is retireved from the backend database, ensuring that the customer with said ID exists in the the database. Once logged in, they can view cars and add cars to their basket. 
+This project is a car dealership webpage, allowing a customer to log in to their account using their id number. This is retrieved from the backend database, ensuring that the customer with said ID exists in the the database. Once logged in, they can view cars and add cars to their basket. 
 
 
 **Tech Stack**
