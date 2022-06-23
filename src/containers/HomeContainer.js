@@ -15,7 +15,7 @@ const HomeContainer = () => {
             <NavBar />
                 <div className="titleBar">
                     <h1 id="title">
-                    <AiTwotoneCar/> Carz4FREEEEEEEE
+                    <AiTwotoneCar/> Carz4FREE
                     </h1>
                         <h2 id="subtitle">Our cars will get you a quarter mile at a time, maybe</h2>
                 </div>
