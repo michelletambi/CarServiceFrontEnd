@@ -14,12 +14,12 @@ import {BsFillHandThumbsUpFill} from "react-icons/bs";
 import {AiFillCar} from "react-icons/ai";
 
 const ProductContainer = () => {
-    // count keep track of the button clicks
-    // let count = 0;
-    const count = 0;
-
-
-
+ 
+    const handleButton3 = () => {
+        document.getElementById("pBasket3").innerHTML = "This product has been added to your basket";
+        
+    }
+   
     return (
         <>
             <NavBar />
@@ -60,7 +60,8 @@ const ProductContainer = () => {
                         Power: 8000rpm
                     </Typography>
                     </div>
-                    <button id="addToBasket">Add to basket</button>
+                    <p id = "pBasket1">This item</p>
+                    <button id="basketOne">Add to basket</button>
                 </AccordionDetails>
             </Accordion>
 
@@ -93,7 +94,8 @@ const ProductContainer = () => {
                         Power: 130 bhp
                     </Typography>
                     </div>
-                    <button id="addToBasket">Add to basket</button>
+                    <p id = "pBasket2">This item </p>
+                    <button id="basketTwo">Add to basket</button>
                 </AccordionDetails>
             </Accordion>
 
@@ -130,13 +132,92 @@ const ProductContainer = () => {
                         Power: 8000rpm
                     </Typography>
                     </div>
-                    <button id="addToBasket">Add to basket</button>
+                    <p id = "pBasket3"></p>
+                    <button id="basket3" onClick = {handleButton3}>Add to basket</button>
                 </AccordionDetails>
             </Accordion>
+
+            <Accordion id="accordionContent">
+                <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel1a-content"
+                    id="panel1a-header">
+                    <Typography id="accordionIcon"><AiFillCar size="35px"/></Typography>
+                    <Typography id="accordionHeader">Volkswagen Tiguan</Typography>
+                </AccordionSummary>
+                <AccordionDetails id="accordion-details">
+                    <div id="image-accordion-position">
+                <img src="https://imgs.search.brave.com/600HMdWpXvT2cziR9it-Y4zIaJTElPdJfxS8UxD0NRg/rs:fit:711:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5I/eW5MamxpSWJiQXRU/YXdhMXB5R1pRSGFF/OCZwaWQ9QXBp" height="200px" width="300px" alt ="me"/>
+                    </div>
+                    <div id="text-accordion-position">
+                    <Typography id="accordionBody">
+                    Volkswagen Tiguan
+                    </Typography>
+                    <Typography id="accordionBody">
+                        Engine: 2.0L
+                    </Typography>
+                    <Typography id="accordionBody">
+                        Type: Manual
+                    </Typography>
+                    <Typography id="accordionBody">
+                        Top Speed: 210km/h
+                    </Typography>
+                    <Typography id="accordionBody">
+                        Price: 15,925 or FREE with us
+                    </Typography>
+                    <Typography id="accordionBody">
+                        Power: 6000rpm
+                    </Typography>
+                    </div>
+                    <p id = "pBasket4"></p>
+                    <button id="basket4">Add to basket</button>
+                </AccordionDetails>
+            </Accordion>
+            
+            <Accordion id="accordionContent">
+                <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel1a-content"
+                    id="panel1a-header">
+                    <Typography id="accordionIcon"><AiFillCar size="35px"/></Typography>
+                    <Typography id="accordionHeader">Toyota Corolla</Typography>
+                </AccordionSummary>
+                <AccordionDetails id="accordion-details">
+                    <div id="image-accordion-position">
+                <img src="https://imgs.search.brave.com/uH-xA2Kl02l9R3d_165xz4O_TB5-hjrdWWSCNOyVe1c/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9tZWRp/YS5kcml2aW5nZWxl/Y3RyaWMuY29tL2lt/YWdlL3ByaXZhdGUv/cy0tMWhYb3U4anEt/LS92MTYxMjI2NTQy/Ny9kcml2aW5nZWxl/Y3RyaWMvMjAyMS0w/Mi9Ub3lvdGEtQ29y/b2xsYS0wMDEuanBn" height="200px" width="300px" alt ="me"/>
+                    </div>
+                    <div id="text-accordion-position">
+                    <Typography id="accordionBody">
+                        Lamborghini Toyota Corolla
+                    </Typography>
+                    <Typography id="accordionBody">
+                        Engine: 1.8 Petrol/ 1.3 kWh
+                    </Typography>
+                    <Typography id="accordionBody">
+                        Type: Automatic
+                    </Typography>
+                    <Typography id="accordionBody">
+                        Top Speed: 125km/h
+                    </Typography>
+                    <Typography id="accordionBody">
+                        Price: £11,000 or FREE with us
+                    </Typography>
+                    <Typography id="accordionBody">
+                        Power: 4000rpm
+                    </Typography>
+                    </div>
+                    <p id = "pBasket5"></p>
+                    <button id="basket5">Add to basket</button>
+                </AccordionDetails>
+            </Accordion>
+            
+
             <p> Here are some of our most popular products!</p>
             <CarList/>
             <Footer/>
         </>
     );
 }
+
+
 export default ProductContainer;
