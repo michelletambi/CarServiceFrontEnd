@@ -22,9 +22,9 @@ This project uses:
 
 **Challenges**
 - Time management
-- Unfamiliarirty with React
+- Unfamiliarity with React
 - Accessing POST URL methods with Axios.
-- Understanding the thought process behing the server side of the project.
+- Understanding the thought process behind the server side of the project.
 
 **Installing the project**
 -Make sure you have React
