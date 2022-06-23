@@ -4,6 +4,7 @@ import axios from 'axios';
 import { CustomerInfo } from '../Helper/Context';
 import CustomerBasket from './CustomerBasket';
 import { Link } from "react-router-dom";
+import ProductContainer from '../containers/ProductContainer';
 
 const CustomerLogin = () => {
     const [email, setEmail] = useState("");
@@ -54,7 +55,7 @@ const CustomerLogin = () => {
             // Sets the value as password
             placeholder="Enter Password" name="psw"
             onChange = {event => setPassword(event.target.value)}/>
-            <Link to="/WelcomeBack">
+            <Link to="/Products">
             <input className="loginButton" type ="submit" value = "Log in"/>
             </Link>
             <CustomerInfo.Provider value = {{customerName, setCustomerName, id, setId}}>

@@ -12,8 +12,13 @@ import { TbZoomMoney } from "react-icons/tb";
 import {VscWorkspaceTrusted} from "react-icons/vsc";
 import {BsFillHandThumbsUpFill} from "react-icons/bs";
 import {AiFillCar} from "react-icons/ai";
+import { useContext, useEffect } from "react";
+import { CustomerInfo } from "../Helper/Context";
 
 const ProductContainer = () => {
+
+
+    const {customerName, setCustomerName, id, setId} = useContext(CustomerInfo);
  
     const handleButton3 = () => {
         document.getElementById("pBasket3").innerHTML = "This product has been added to your basket";
@@ -27,7 +32,6 @@ const ProductContainer = () => {
                 Carz4FREE: Our Products
             </h1>
             <h3 id="headingCenter"> Here are some of our most popular products!</h3>
-
             <Accordion id="accordionContent">
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
