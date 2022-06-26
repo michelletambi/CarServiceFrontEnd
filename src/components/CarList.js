@@ -5,9 +5,7 @@ import axios from 'axios';
 const CarList = () => {
 
     const [cars, setCars] = useState([]);
-    const [filteredCars, setFilteredCars] = useState([]);
     const [query, setQuery] = useState("");
-    const [manufacturer, setManufacturer] = useState("");
 
     const stock = "Show%20only%20in-stock%20items=false";
 
