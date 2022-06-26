@@ -4,12 +4,8 @@ import axios from 'axios';
 import { CustomerInfo } from '../Helper/Context';
 import CustomerBasket from './CustomerBasket';
 import { Link } from "react-router-dom";
-import ProductContainer from '../containers/ProductContainer';
 
 const CustomerLogin = () => {
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
-    const [error, setError] = useState("Invalid id");
     const [id, setId] = useState("");
     const [customer, setCustomer] = useState({});
     const[customerName, setCustomerName] = useState("");
@@ -19,22 +15,16 @@ const CustomerLogin = () => {
     async function handleSubmit (e) {
         // prevents the webpage from reloading when the form is submitted
         e.preventDefault();
-        // window.location.href = "./Basket"
-        console.log("submitted");
     }
     const getCustomerById = async () => {
         const response = await axios.get(customersUrl);
         setCustomer(response.data);
         setCustomerName(response.data.name);
-        
     };
 
     useEffect(() => {
         getCustomerById();
     }, [id])
-    console.log({customer});
-    console.log({customerName});
-    // console.log({id});
 
 
     return(
