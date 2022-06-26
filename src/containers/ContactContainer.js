@@ -7,26 +7,37 @@ import Footer from "../components/Footer";
 const ContactContainer = () => {
     return (
         <>
-            <NavBar/>
-                <h3 id="headingCenter">Contact Form</h3>
-            <div class="containerForm">
-                <form>
-                    <label id="headingLeft">First Name</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your name.."></input>
+       
 
-                    <label for="lname"> Last Name </label>
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name.."></input>
+            <header>
+                <NavBar/>
+            </header>
+            <h3 id="title">Contact Us!</h3>
+            <h4 id="headingCenter">If you have any issues or questions, we'd love to hear from you</h4>
+            <main className="elementBody" action="/action.php" method="post">
 
-                    <label for="email">Email</label>
-                    <input type="text" id="email" name="email" placeholder="Your Email.."></input>
+            <div>
+                    <form className="containerForm" >
+                        <label id="headingCenter">First Name</label>
+                        <input type="uname" placeholder="Your first name.." required ></input>
 
-                    <label for="subject">Subject</label>
-                    <textarea id="subject" name="subject" placeholder="Send us a message .."></textarea>
+                        <label id="headingCenter"> Last Name </label>
+                        <input type="uname" placeholder="Your last name.." required ></input>
+                        
 
-                    <input type="submit" value="Submit"></input>
-                </form>
-            </div>
 
+                        <label id="headingCenter">Email</label>
+                        <input type="uname" placeholder="Your Email.." required></input>
+                        
+
+
+                        <label id="headingCenter">Subject</label>
+                        <textarea className="subject" name="subject" placeholder="Send us a message .." required></textarea>
+
+                        <input type="submit" value="submit"></input>
+                    </form>
+                </div>
+            </main>
            <Footer/>
         </>
     );

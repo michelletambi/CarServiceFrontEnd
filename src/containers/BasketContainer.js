@@ -1,33 +1,29 @@
 import React from "react";
 import NavBar from "../components/NavBar";
-import { useState } from "react";
 import Footer from "../components/Footer.js";
-
+import { BsFillBasket2Fill } from "react-icons/bs";
+import AddCartItem from "../components/AddCartItem";
+import { useState } from "react";
 
 
 const BasketContainer = () => {
 
-    // const [newRating, setNewRating] = useState("");
+    const [newRating, setNewRating] = useState("");
 
     return (
         <> 
-            <NavBar />
-            {/* <h1 class id="yourcart"> Your basket 🧺</h1>
-            <div>
-              <div class="container">
-                  <h4>Cart
-                    <span class="price">
-                    <i class="fa fa-shopping-cart"></i>
-                    </span>
-                  </h4>
-                    <p>
-                      Product 1 <span class="price">£</span> <button> - </button><input type="number" min="1" max="5"  className="button_input" id="ratingField" placeholder="0" required onChange={(e) => {setNewRating(e.target.value)}} /> 
-                      <button> + </button>
-                    </p>
+          <header id="header">
+            <NavBar/>
+          </header>
+          <h1 id="title"> Your basket <BsFillBasket2Fill/></h1>
+          <main className="elementBody">
+              <div id="basketContainer">
+                  <h4 id="headingCenter">Cart</h4>
+                  <AddCartItem />
                     <hr/> 
-                    <p>Total: <span class="price"><b>£</b></span></p>
-                </div>
-            </div> */}
+                    <p id="b">Total: <span class="price"><b>£</b></span></p>
+              </div>
+            </main>
             <Footer />
         </>
     );

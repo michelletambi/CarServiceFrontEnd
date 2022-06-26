@@ -12,7 +12,10 @@ const HomeContainer = () => {
 
     return (
         <>
-            <NavBar />
+            <header>
+                <NavBar />
+            </header>
+            <main>
                 <div className="titleBar">
                     <h1 id="title">
                     <AiTwotoneCar/> Carz4FREE
@@ -25,13 +28,9 @@ const HomeContainer = () => {
             <h4 id="headingCenter"> only 90% breakdown rate after 3 days.</h4>
             <h5 id="headingRight">if you ask for a refund youll go out the way Han did. </h5>
             <img src = "http://animalultrasoundassociation.org/wp-content/uploads/2019/08/trustpilot.jpg" alt = "Trust-pilot  stars image" id="trustPilot"/>
-            {/* <HomeSearch/> */}
             <HomeComponents />
             <CarList/>
-            {/* <CustomerLogin/> */}
-            
-           
-
+            </main>
             <Footer/>
         </>
     );

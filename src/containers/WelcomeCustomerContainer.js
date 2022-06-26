@@ -8,13 +8,17 @@ const WelcomeCustomerContainer = () => {
 
     return (
         <>
-            <NavBar />
+            <header>
+                <NavBar />
+            </header>
+            <main className="elementBody">
             <div id="titleBar">
                 <h1 id="title">
                     Welcome back to Carz4FREE
                 </h1>
                 <h2 id="subtitle">We missed you!</h2>
             </div>
+            </main>
             <CarList/>
             <Footer/>
         </>
